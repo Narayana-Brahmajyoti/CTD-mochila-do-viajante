@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro dos usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" >
+        
+        <a class="links" id="paracadastro"></a>
+        <a class="links" id="paralogin"></a>
+        
+        <div class="content">      
+          <!--FORMULÁRIO DE LOGIN-->
+            <div id="login">
+                <form method="post" action=""> 
+                    <h1>Login</h1> 
+                    
+                    <p> 
+                        <label for="email_login">Seu e-mail</label>
+                        <input id="email_login" name="email_login" required="required" type="text" placeholder="seuemail@exemplo.com"/>
+                    </p>
+              
+                    <p> 
+                        <label for="senha_login">Sua senha</label>
+                        <input id="senha_login" name="senha_login" required="required" type="password" placeholder="1234" /> 
+                    </p>
+              
+                    <p> 
+                            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+                            <label for="manterlogado">Manter-me logado</label>
+                    </p>
+              
+                    <p> 
+                            <input id="botao submit_login" type="submit" value="Logar"/> 
+                    </p>
+              
+                    <p class="link">
+                            Ainda não tem conta?
+                            <a href="#paracadastro">Cadastre-se</a>
+                    </p>
+                    
+                </form>
+            </div>
+    
+          <!--FORMULÁRIO DE CADASTRO-->
+            <div id="cadastro">
+                <form method="post" action=""> 
+
+                    <h1>Cadastro</h1> 
+              
+                    <p> 
+                        <label for="nome_cad">Seu nome</label>
+                        <input id="nome_cad" name="nome_cad" required="required" type="text" maxlength="30" placeholder="Nome" />
+                    </p>
+
+                    <p> 
+                        <label for="sobrenome_cad">Seu sobrenome</label>
+                        <input id="sobrenome_cad" name="sobrenome_cad" required="required" type="text" maxlength="70" placeholder="Sobrenome"/>
+                    </p>
+                    
+                    <p>
+                        <label for="data_nasc_cad">Sua data de nascimento</label>
+                        <input id="data_nasc_cad" name="data_nasc_cad" required="required" type="date" placeholder="Data de nascimento"/>
+                    </p>
+
+                    <p>
+                        <label for="telefone_cad">Seu telefone</label>
+                        <input id="telefone_cad" name="telefone_cad" type="number" maxlength="15" required="required" placeholder="Ex.: (00) 00000-0000"/>
+                    </p>
+
+                    <p> 
+                        <label for="email_cad">Seu e-mail</label>
+                        <input id="email_cad" name="email_cad" required="required" type="email" placeholder="seuemail@exemplo.com"/> 
+                    </p>
+                    
+                    <p> 
+                        <label for="senha_cad">Sua senha</label>
+                        <input id="senha_cad" name="senha_cad" required="required" type="password" minlength="8" maxlength="16" placeholder="1234"/>
+                    </p>
+
+                    <div id="selecionaveis">
+                        <label for="maioridade_cad">Você é maior de 18 anos?</label><br>
+                            <input id="maioridade_cad" name="maioridade_cad" required="required" type="radio" value="maior_18"/>Tenho mais de 18 anos <br>
+                            <input id="maioridade_cad" name="maioridade_cad" required="required" type="radio" value="menor_18"/>Tenho menos de 18 anos
+                        
+                        <p>
+                            <label for="interesses_cad">Você está em Bh a ?</label>
+                            <select name="interesses_cad" id="interesses_cad">
+                                <option selected disabled value= "">Selecione</option> 
+                                <option>Passeio</option> 
+                                <option>Trabalho</option>
+                                <option>Estudos</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="interesses_na_cidade_cad">Sobre quais dessas atividades em BH você teria interesse em receber informações?</label><br>
+                            <input id="interesses_na_cidade_cad" name="interesses_na_cidade_cad" required="required" type="checkbox" value="passeio"/>Vida Noturna<br>
+                            <input id="interesses_na_cidade_cad" name="interesses_na_cidade_cad" required="required" type="checkbox" value="trabalho"/>Gastronomia<br>
+                            <input id="interesses_na_cidade_cad" name="interesses_na_cidade_cad" required="required" type="checkbox" value="teatro"/>Teatro<br>
+                            <input id="interesses_na_cidade_cad" name="interesses_na_cidade_cad" required="required" type="checkbox" value="trilhas"/>Trilhas<br>
+                            <input id="interesses_na_cidade_cad" name="interesses_na_cidade_cad" required="required" type="checkbox" value="trabalho"/>Cachoeiras<br>
+                            <input id="interesses_na_cidade_cad" name="interesses_na_cidade_cad" required="required" type="checkbox" value="museus"/>Museus
+                        </p>
+                    </div>
+                    <p>
+                        <input id="botao reset_cad" type="reset" value="Redefinir"/>
+                        <input id="botao submit_cad" type="submit" value="Cadastrar"/> 
+                    </p>
+              
+                    <p class="link">  
+                        Já tem conta?
+                        <a href="#paralogin"> Ir para Login </a>
+                    </p>
+                    
+                </form>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
