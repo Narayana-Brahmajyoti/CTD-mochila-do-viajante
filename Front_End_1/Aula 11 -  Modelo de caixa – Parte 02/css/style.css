@@ -1,0 +1,36 @@
+div{
+    border-style: double;
+    border-color: blueviolet;
+    display: flexbox;
+}
+
+.pai-1, .pai-2, .pai-3{
+    height: 300px;
+    width: 300px;    
+}
+
+.filhos-1, .filhos-2, .filhos-3{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+
+.pai-3{
+    position: relative;
+    left: 1025px;
+    bottom: 620px;
+
+}
+
+.pai-2{
+    position: sticky;
+    top: 320px;
+    left: 515px;
+
+}
+
+p{
+    padding: 25px;
+}
