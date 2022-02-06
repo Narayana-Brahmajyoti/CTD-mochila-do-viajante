@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Coda+Caption:wght@800&family=Dancing+Script:wght@500&family=Megrim&family=Passions+Conflict&family=Rampart+One&family=Tourney:wght@500&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    background: black;
+    padding: 10px 0;
+    width: 100%;
+    margin: -10px;
+    position: fixed;
+    z-index: 1;
+}
+
+.botoes {
+    left: 10px;
+    position: absolute; 
+    margin-top: -15px;
+    margin-left: 12px;
+    padding: 10px;
+}
+
+button {
+    font-family: 'Megrim', cursive;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: -10px;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+#titulo {
+    font-family: 'Passions Conflict', cursive;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+.corpo {
+    background-image: url('../imagens/lagoa-da-pampulha.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Antic Didone', serif;
+    font-size: 50px;
+    height: 100%;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+}
+
+.video iframe{
+    position: absolute;
+    width: 100%;
+    height: 56.25%;
+}
+
+main {
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    position: absolute;
+    top: 30%;
+}
+
+a {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+p {
+    text-justify: auto;
+    text-align: justify;
+}
+
+ul {
+    text-justify: auto;
+    text-align: justify;
+}
+
+.subtitulo {
+    font-family: 'Megrim', cursive;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    z-index: 3;
+}
+
+.youtube {
+    position: absolute;
+    right: 130px;
+    width: 50px;
+    height: 50px;
+    bottom: -1000px;
+    z-index: 3;
+}
+
+.insta {
+    position: absolute;
+    right: 70px;
+    width: 50px;
+    height: 50px;
+    bottom: -1000px;
+    z-index: 3;
+}
+
+@media (min-width: 460px){
+    body{
+        display: flex;
+
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        display: flex;
+    }
+}
+
+@media (max-width: 460px) and (orientation: landscape){
+    body{
+        display: flex;
+    }
+}
