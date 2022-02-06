@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="CSS/style.css" rel="stylesheet">
+
+    <title>DH EVENTOS - Login</title>
+</head>
+
+<body>
+    <header id="header">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top">
+            <a class="navbar-brand" href="index.html"><span>DH</span> EVENTOS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+    </header>
+
+
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-center" >
+                <div class="col-md-6 col-lg-5 mt-5">
+                    <div class="card border-navel shadow">
+                        <div class="card-header text-center bg-navel border-danger">
+                            <h3 class="font-weight-bold text-white"><span>DH</span> EVENTOS</h3>
+                        </div>
+                        
+                        <div class="card-body mt-4 mb-2">
+                            <h4>LOGIN</h4>
+                            <form>
+                                <div class="form-group">
+                                    <label for="email" class="col-md-4 col-form-label text-md-left">E-Mail</label>
+
+                                    <input id="email" type="email" class="form-control col-md-12" name="email" required
+                                        autofocus>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password" class="col-md-4 col-form-label text-md-left">Senha</label>
+
+                                    <input id="password" type="password" class="form-control col-md-12" name="password"
+                                        required>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="remember" id="remember">
+
+                                        <label class="form-check-label" for="remember">
+                                            Lembrar-me
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class=" text-center mt-5">
+                                    <button type="submit" class="btn btn-navel text-light  col-md-5">
+                                        Entrar
+                                    </button>
+                                </div>
+                                <div class="text-center">
+                                   Ainda não tem conta? <a class="btn btn-link" href="#">
+                                         Criar Conta. 
+                                    </a>
+                                    <div class="text-center">
+                                        <a class="btn btn-link" href="#">
+                                            Esqueceu a Senha? 
+                                        </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+
+     <!-- FOOTER -->
+     <footer class="rodape">
+        <div class="p-3 mb-2 bg-dark text-white">
+            <div class="equipe ">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h4>Arivaldo Lopes Camargo</h4>
+                        <a href="https://github.com/Arilopes/checkpoint-III"><img src="IMG/github.png"
+                                alt="Icone github"></a>
+                        <a href="https://www.linkedin.com/in/arivaldo-camargo-8aa7b1227/"><img src="IMG/linkedin.png"
+                                alt="Icone linkedin"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h4>Luiz Fernando </h4>
+                        <a href="#"><img src="IMG/github.png" alt="Icone github"></a>
+                        <a href="#"><img src="IMG/linkedin.png" alt="Icone linkedin"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h4>Narayna Brahmajyoti</h4>
+                        <a href="https://github.com/Narayana-Brahmajyoti">
+                            <img src="IMG/github.png" alt="Icone github"></a>
+
+                        <a href="https://www.linkedin.com/in/narayana-brahmajyoti-3a0050228/">
+                            <img src="IMG/linkedin.png" alt="Icone linkedin"></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="copyright">
+                <p>Checkpoint III - Desenvolvido em 2021.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
