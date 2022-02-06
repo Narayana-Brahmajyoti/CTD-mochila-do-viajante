@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://www.joaoleitao.com/viagens/wp-content/uploads/2020/01/Grecia-Guia-de-Viagem.jpg);
+    background-repeat: no-repeat;
+    height: 720px;
+    width: 1280px;
+    /*background-attachment: fixed;*/
+}
+
+.cabeçalho{
+   text-align: center;
+   margin: 20px;
+   width: 100%;
+   padding: 10px;
+   background-color: blueviolet;
+   border-radius: 5px;
+}
+
+.btn{
+    border-radius: 10px;
+    background-color: thistle;
+    padding: 5px;
+    margin: 3px;
+    text-align: center;
+    width: 100px;
+    border-color: white;
+    border-style: solid;
+}
+
+main{
+    margin-left: 410px;
+    margin-top: 50px;
+}
+
+.btnmain{
+    border-style: solid;
+    border-radius: 3px;
+    border-color: yellow;
+    padding: 5px;
+    font-size: larger;
+    margin: 10px;
+}
+
+.whatsapp{
+    position: fixed;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    z-index: 1;
+
+}
