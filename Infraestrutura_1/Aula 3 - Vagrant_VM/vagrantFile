@@ -9,5 +9,9 @@ config.vm.define "server" do |server|
 config.vm.box = "debian/buster64"
 server.vm.hostname = "server"
 server.vm.network "public_network"
+server.vm.provision "shell", inline: <<-SHELL
+apt-get update
+apt-get install -y apache2
+SHELL
 end
 end
