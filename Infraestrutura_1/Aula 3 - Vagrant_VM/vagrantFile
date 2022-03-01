@@ -13,5 +13,8 @@ server.vm.provision "shell", inline: <<-SHELL
 apt-get update
 apt-get install -y apache2
 SHELL
+server.vm.provision "file", source: "index.html",
+destination: "index.html"
+server.vm.provision "shell", inline: "mv index.html/var/www/html/index.html"
 end
 end
