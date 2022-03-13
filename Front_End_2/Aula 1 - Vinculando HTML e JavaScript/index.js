@@ -8,4 +8,3 @@ for(let i = 0; i<nomes.length; i++){
     let nomeCapturado = nomes[i];
     console.log(nomeCapturado)
 }
-console.log(nomes);
