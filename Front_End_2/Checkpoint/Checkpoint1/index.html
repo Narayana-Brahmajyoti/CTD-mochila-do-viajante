@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Checkpoint 1 - Formulário</title>
+
+</head>
+<body>
+    <div id="container">
+        <aside>
+            <div>
+                <h1 class="text1">Locais</h1>
+                <h1 class="text2">interessantes</h1>
+                <h1 id="text2">para Conhecer</h1>
+                <p id="text3">Nos indique algum lugar legal para visitar em nossa próxima viagem</p>
+            </div>
+            <form  id="form">
+                <fieldset id="fieldset">
+                    <h2 class="text4">Insira aqui a sua sugestão de turismo</h2>
+                    <br>
+                    <input type="text" name="title" id="titulo-form" placeholder="Título" required>
+                    <input type="text" name="description" id="descricao-form" placeholder="Descrição" onkeyup="toLimit(this)" required>
+                    <input type="text" name="url" id="url-form" placeholder="URL da imagem">
+                    <br>
+                    <h2 class="text4">Qual a melhor época do ano para conhecer este lugar?</h2>
+                    <div class="text5">
+                        <input type="radio" name="option" value="Outono">Outono</input>
+                        <input type="radio" name="option" value="Inverno">Inverno</input>
+                        <input type="radio" name="option" value="Primavera">Primavera</input>
+                        <input type="radio" name="option" value="Verão">Verão</input>
+                        
+                    </div>
+                    <div class="text6">
+                        <input type="checkbox" id="condicoes"> Você concorda em deixar essas imagens públicas </input>
+                    </div>
+                </fieldset>
+                <button type="submit" id="btn-form" value="Enviar">Enviar</button>
+            </form>
+        </aside>
+        <main>
+            <div id="list-container">
+                <!-- Os cards serão inseridos aqui através do JS -->
+            </div>
+        </main>
+    </div>
+    <footer >
+        <div class="rodape">
+            <div class="equipe ">
+                    <div class="integrante1">
+                        <h4>Arnaldo Ramos</h4>
+                        <a href="https://github.com/ArnaldoRamos"><img src="IMG/github.png" alt="Icone github"></a>
+                        <a href="https://www.linkedin.com/in/arnaldo-ramos/"><img src="IMG/linkedin.png" alt="Icone linkedin"></a>
+                    </div>
+                    <div class="integrante2">
+                        <h4>Moisés Andrade</h4>
+                        <a href=""><img src="IMG/github.png" alt="Icone github"></a>
+                        <a href=""><img src="IMG/linkedin.png" alt="Icone linkedin"></a>
+                    </div>
+                    <div class="integrante3">
+                        <h4>Narayana Brahmajyoti</h4>
+                        <a href=""><img src="IMG/github.png" alt="Icone github"></a>
+                        <a href=""><img src="IMG/linkedin.png" alt="Icone linkedin"></a>
+                    </div>
+            </div>
+            <div class="copyright">
+                <p>Checkpoint I - Desenvolvido em 2022.</p>
+            </div>
+            
+        </div>
+       
+    </footer>
+        
+    <script src="./script.js"></script>
+
+</body>
+</html>
