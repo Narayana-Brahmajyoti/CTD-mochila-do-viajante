@@ -1,14 +1,18 @@
 //Selecionando os IDs
-let tituloForm = document.querySelector('#titulo-form');
-let descricaoForm = document.querySelector('#descricao-form');
-let urlForm = document.querySelector('#url-form');
-let form = document.querySelector('#form');
+function selectId(id){
+    return document.getElementById(id);
+}
+let tituloForm = selectId("titulo-form");
+let descricaoForm = selectId("descricao-form");
+let urlForm = selectId("url-form");
+let form = selectId("form");
+let formCheckbox = selectId("permissao-img");
 
-//Selecionando o input 
-const formRadio = document.querySelectorAll('input[name=\'option\']');
+//Capturando o inputd Radio 
+let formRadio = document.getElementsByName("option");
 
 //Adicionando o evento
-form.addEventListener('submit', enviar);
+form.addEventListener("submit", enviar);
 
 //Validação de seleção dos inputs
 function radioSelecionado(inputs) {
@@ -27,31 +31,31 @@ function enviar(event) {
     let radio = radioSelecionado(formRadio);
   
     //Atribuindo elemento pai 
-    let container = document.querySelector('#list-container')
+    let container = selectId("list-container")
     
     //Adcionando os elementos do Card
-    let titulo = document.createElement('h3');
-    let descricao = document.createElement('span');
-    let img = document.createElement('img');
-    let selecao = document.createElement('span');
-    
+    let titulo = document.createElement("h3");
+    let descricao = document.createElement("span");
+    let img = document.createElement("img");
+    let selecao = document.createElement("span");
+    let chk = document.createElement("h4");
 
-    //Colocando novos valores no documento
+    //Adcionando novos valores no documento
     titulo.innerHTML = tituloForm.value;
     descricao.innerHTML = descricaoForm.value;
-    img.setAttribute('src', urlForm.value);
+    img.setAttribute("src", urlForm.value);
     selecao.innerHTML = radio;
-    
+    chk.innerHTML = formCheckbox.checked ? "Imagem pública" : "Imagem restrita";
     
     //Criando elemento DIV
-    let item = document.createElement('div');
+    let item = document.createElement("div");
 
     //Criando os appendChild
     item.appendChild(titulo);
     item.appendChild(descricao);
     item.appendChild(img);
     item.appendChild(selecao);
-    
+    item.appendChild(chk)
     
     //Adcionando os itens no Card
     container.appendChild(item);
@@ -61,3 +65,7 @@ function enviar(event) {
     function toLimit(string = "descricao-form"){
         string.value = string.value.substring(0,250);
     }
+
+    
+    
+    
