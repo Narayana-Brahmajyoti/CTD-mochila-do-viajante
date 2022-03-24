@@ -23,6 +23,11 @@ function radioSelecionado(inputs) {
     }   
 } 
 
+ //Limitando o texto da descrição
+ function toLimit(string = "descricao-form"){
+    string.value = string.value.substring(0,250);
+}
+
 //Função principal
 function enviar(event) {
     event.preventDefault();
@@ -39,14 +44,16 @@ function enviar(event) {
     let img = document.createElement("img");
     let selecao = document.createElement("span");
     let chk = document.createElement("h4");
-
+    let imgRestrita = formCheckbox.checked ? "imgPublica" : "imgRestrita";
+    
     //Adcionando novos valores no documento
     titulo.innerHTML = tituloForm.value;
     descricao.innerHTML = descricaoForm.value;
     img.setAttribute("src", urlForm.value);
+    img.setAttribute("id", imgRestrita);
     selecao.innerHTML = radio;
     chk.innerHTML = formCheckbox.checked ? "Imagem pública" : "Imagem restrita";
-    
+
     //Criando elemento DIV
     let item = document.createElement("div");
 
@@ -54,17 +61,17 @@ function enviar(event) {
     item.appendChild(titulo);
     item.appendChild(descricao);
     item.appendChild(img);
+   
     item.appendChild(selecao);
     item.appendChild(chk)
     
     //Adcionando os itens no Card
     container.appendChild(item);
 }
-
-    //Limitando o texto da descrição
-    function toLimit(string = "descricao-form"){
-        string.value = string.value.substring(0,250);
-    }
+   
+   
+   
+   
 
     
     

@@ -75,13 +75,13 @@ aside {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  padding: 10px;
   color: #eaede6;
   display: flex;
   flex-direction: grid;
   width: 385px;  
   position: initial;
   align-items: center;
+  text-align: center;
 }
 
 .text6 {
@@ -172,9 +172,15 @@ input {
   margin-left: 10px;
 }
 
-#list-container img{
+#list-container #imgPublica{
   height: 300px;
   width: 300px;
+}
+
+#list-container #imgRestrita{
+ height: 300px;
+ width: 300px;
+ filter: blur(10px);
 }
 
 #fieldset {
