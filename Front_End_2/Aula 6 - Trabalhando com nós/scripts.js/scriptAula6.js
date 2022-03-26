@@ -1,23 +1,3 @@
-function  modoDark () {
-    let darkBackground  = document.querySelector('body');
-    darkBackground.classList.toggle('darkBackground');
-
-    let darkTitle = document.querySelector('h1');
-    darkTitle.classList.toggle('darkTitle');
-
-    let checkbox = document.querySelector('.darkMode');
-    checkbox.classList.toggle('btTextDark');
-
-    let darkItem = document.querySelectorAll('.item');
-    darkItem.forEach(element => { element.classList.toggle('darkItem') });
-
-    let darkText = document.querySelectorAll('.item h2, p');
-    darkText.forEach(element => { element.classList.toggle('darkText') }); 
-
-} 
-let chk = document.getElementById('chk');
-chk.addEventListener('click', modoDark);
-
 // Passo 1
 // Você precisará remover os posts de cada felino do HTML e armazená-los em uma
 // variável Javascript. Tenha o cuidado de armazenar os dados de uma forma que 
@@ -71,11 +51,3 @@ criarCard('./imagens/leopardo.jpg', 'Leopardo', 'Descrição do Felino 4');
 criarCard('./imagens/pantera-negra.jpg', 'Pantera-Negra', 'O jaguar, ou jaguarete (Panthera onca) é um carnívoro felídeo da sub-família Panthera e do gênero Panthera. É a única das cinco espécies existentes deste gênero encontradas nas Américas. Também é o maior felino das Américas e o terceiro maior do mundo, depois do tigre (Panthera tigris) e do leão (Panthera leo).');
 criarCard('./imagens/tiger.jpg', 'Tigre', 'Descrição do Felino 6');
 criarCard('https://picsum.photos/200/300', 'Lorem Picsum', 'Imagem aleatória');
-
-
-
-
-
-
-
-
