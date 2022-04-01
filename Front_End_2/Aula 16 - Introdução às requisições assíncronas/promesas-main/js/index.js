@@ -4,7 +4,7 @@ const baseDeDados = {
         "nome": {
             "titulo": "sr",
             "primeiro": "David",
-            "utlimo": "Fernando"
+            "ultimo": "Fernando"
         },
         "localizacao": {
             "rua": " Augusta , 238",
@@ -59,6 +59,7 @@ const baseDeDados = {
     }
 };
 
+
 let consultandoBaseDeDados = new Promise((resolve, reject) => {
     // Aqui temos uma solicitação simulada para um banco de dados, com um atraso de 2 segundos.
     //A lógica interna estará  no servidor e nós apenas esperaríamos por uma resposta.
@@ -77,8 +78,7 @@ let consultandoBaseDeDados = new Promise((resolve, reject) => {
 // Aqui realizamos uma consulta da promessa, aguardando sua resposta assíncrona
 consultandoBaseDeDados
     .then((resposta) => {
-        return resposta.resultado
-
+        return resposta.resultado;
     })
     .then(resultado => {
         return resultado[0];
@@ -94,11 +94,24 @@ function renderizarDadosUsuario(dados) {
     /* -------------------------------- TAREFAS -------------------------------- */
     // Aqui  devem desenvolver uma função que é exibida na tela:
     // a foto, o nome completo do usuário e seu e-mail.
-    //  Isso deve ser baseado nas informações que chegam até nós e  são inseridas no HTML.
-    //  Dica: você pode manipular o CSS e estruturar o card ao seu gosto.
+    // Isso deve ser baseado nas informações que chegam até nós e  são inseridas no HTML.
+    // Dica: você pode manipular o CSS e estruturar o card ao seu gosto.
+let card = document.querySelector(".tarjeta");
+let img = document.createElement("img");
+let usuario = document.createElement("h2");
+let email = document.createElement("p");
 
+img.src = dados.imagem.grande;
+usuario.innerHTML = dados.nome.primeiro + " " + dados.nome.ultimo;
+email.innerHTML = dados.email;
 
+let item = document.createElement("div");
+item.classList.add("item");
 
+item.appendChild(img);
+item.appendChild(usuario);
+item.appendChild(email);
 
+card.appendChild(item);
 
 }
