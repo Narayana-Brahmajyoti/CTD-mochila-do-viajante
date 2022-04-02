@@ -96,7 +96,7 @@ function renderizarDadosUsuario(dados) {
     // a foto, o nome completo do usuário e seu e-mail.
     // Isso deve ser baseado nas informações que chegam até nós e  são inseridas no HTML.
     // Dica: você pode manipular o CSS e estruturar o card ao seu gosto.
-let card = document.querySelector(".tarjeta");
+let card = document.querySelector(".card");
 let img = document.createElement("img");
 let usuario = document.createElement("h2");
 let email = document.createElement("p");
