@@ -9,10 +9,10 @@
 
   <!-- ---------------- estilos compartilhados entre login e signup ---------------- -->
   <link rel="stylesheet" href="styles/acesso.css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-  <!-- ---------------------- lógica aplicada no registro -------------------- -->
-  <script src="/scripts/utils.js"></script>
-  <script src="/scripts/signup.js"></script>
+  
+
 
 </head>
 
@@ -26,36 +26,44 @@
       <div class="form-header">
         <p>To-Do App</p>
       </div>
-
+      <p id="exibirErro">
+      </p>
       <label>
         Nome:
-        <input type="text">
+        <input type="text" id="campoNome">
+        <small id="inputNomeValidacao"></small>
       </label>
       <label>
-        Apelido:
-        <input type="text">
+        Sobrenome:
+        <input type="text" id="campoApelido">
+        <small id="inputApelidoValidacao"></small>
       </label>
       <label>
         Email:
-        <input type="text">
+        <input type="text" id="campoEmail">
+        <small id="inputEmailValidacao"></small>
       </label>
       <label>
         Senha:
-        <input type="password">
+        <input type="password" id="campoSenha">
+        <img src="./assets/olho-vermelho.png" alt="Icone olho para mostrar senha" id="olho">
+        <small id="inputSenhaValidacao"></small>
       </label>
       <label>
         Repetir senha:
-        <input type="password">
+        <input type="password" id="campoRepetirSenha">      
+        <small id="inputRepetirSenhaValidacao"></small>
       </label>
 
-      <button>Criar conta</button>
+      <button type="submit" id="criarConta">Criar conta</button>
 
     </form>
     <div class="ingressar">
       <a href="index.html">Já possui conta? Acesse aqui</a>
     </div>
   </div>
-
+<script src="./scripts/validacoes/utils.js"></script>
+<script src="./scripts/cadastro/signup.js"></script>
 </body>
 
 </html>

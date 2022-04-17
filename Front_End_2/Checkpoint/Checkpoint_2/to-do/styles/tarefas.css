@@ -171,6 +171,7 @@ a {
   background-color: white;
   padding: 1em 2em;
   box-shadow: 2px 2px 5px lightgrey;
+  
 }
 
 .tarefa .nome {
@@ -180,6 +181,45 @@ a {
 .tarefa .timestamp {
   font-size: .9em;
   color: rgb(134, 134, 134);
+}
+
+/* .btn-send img { */
+  /* position: absolute; */
+  /* height: 1.5em; */
+  /* width: 1.5em; */
+/* } */
+.editar img {
+  position: absolute; 
+  border: none;
+  cursor: pointer;
+  opacity: .5;
+  height: 1.5em;
+  width: 1.5em;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+ 
+}
+
+
+
+
+
+
+
+
+
+
+#editar:hover {
+  opacity: 1;
+}
+
+.btn-send:hover {
+  opacity: 1;
+ }
+
+#editarTarefa {
+  border: 1px solid var(--secondary);
+
 }
 
 /* Tarefas terminadas ----------------------------------------------------------- */
@@ -228,8 +268,8 @@ a {
   background-color: rgb(189, 189, 189);
 }
 #skeleton p{
-  background-color: rgb(214, 214, 214);
-  color: rgb(214, 214, 214);
+  /* background-color: rgb(214, 214, 214); */
+  color: rgb(0, 0, 0);
 }
 #skeleton .not-done{
   background-color: rgb(189, 189, 189);
@@ -239,6 +279,6 @@ a {
   animation: trasparencia 1s infinite;
 }
 @keyframes trasparencia {
-  0%{ opacity: 0.5;}
+  0%{ opacity: 0.79;}
   100%{ opacity: 0.8;}
 }
