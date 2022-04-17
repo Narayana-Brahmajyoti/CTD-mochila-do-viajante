@@ -1,24 +1,12 @@
-
-
-
-
 function aparecerCampo() {
     let tarefa = pegarElementoID("editar");
     tarefa.removeAttribute("hidden");    
 }
-
-function sumirCampo(){
-    let tarefa = pegarElementoID("editar");
-    tarefa.setAttribute("hidden", true);
-}
-//Evento para enviar a edição da tarefa
-// btnEditar.addEventListener('click', function(event){
-    // event.preventDefault();
-    // let entradaTarefa = editar.value;
-    // editarTarefa(entradaTarefa,);
-// });
-
-
+// tinha associado ao evento onsubmit do formulario, funcionou. vou testar outras formas de fazer o mesmo.
+// function sumirCampo(){
+    // let tarefa = pegarElementoID("editar");
+    // tarefa.setAttribute("hidden", true);
+// }
 
 function editarTarefa(id, token){
     let descricao = pegarElementoID("editar");

@@ -1,4 +1,3 @@
-
 function tarefaPendente(tarefa) {
 
     let dataConvertida = dayjs(tarefa.createdAt).format('DD/MM/YYYY')
@@ -21,17 +20,7 @@ function tarefaPendente(tarefa) {
             </button>
             <p class="timestamp"><i class="far fa-calendar-alt"></i> ${dataConvertida}</p>
         </div>
-    </div>
-`
+    </div>`
     ul.appendChild(li)
 
 }
-
-{/* <form class="nova-tarefa"> */}
-  {/* <div class="not-done "></div> */}
-  {/* <input id="novaTarefa" type="text" placeholder="Nova tarefa"> */}
-  {/* <button type="submit"> */}
-    {/* <img src="./assets/plus.png" alt="Adicionar uma nova tarefa"> */}
-  {/* </button> */}
-{/* </form> */}
-{/*  */}
