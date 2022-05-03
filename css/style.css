@@ -40,6 +40,17 @@
     align-items: center;
 }
 
+#text2 {
+    font: 400 2rem/1.5 'Aclonica', sans-serif;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 15%;
+}
+
+.btn{
+    margin: 0 auto;
+}
+
 .typing-animation {
     animation: blinkCursor 0.5s infinite normal, typing 4s steps(40) 1s normal both infinite;
 
@@ -72,5 +83,13 @@
     text-align: center;
 }
 
-
+@media (min-width: 1180px) {
+    #text1 {
+        font: 400 4rem/1.5 'Aclonica', sans-serif;
+    }
+    #text2 {
+        font: 400 4rem/1.5 'Aclonica', sans-serif;
+    }
+}
+    
 
