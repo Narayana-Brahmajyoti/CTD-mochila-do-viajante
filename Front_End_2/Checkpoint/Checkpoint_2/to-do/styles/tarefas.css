@@ -183,11 +183,10 @@ a {
   color: rgb(134, 134, 134);
 }
 
-/* .btn-send img { */
-  /* position: absolute; */
-  /* height: 1.5em; */
-  /* width: 1.5em; */
-/* } */
+
+
+
+
 .editar img {
   position: absolute; 
   border: none;
@@ -195,19 +194,8 @@ a {
   opacity: .5;
   height: 1.5em;
   width: 1.5em;
-  /* display: flex; */
-  /* justify-content: flex-end; */
  
 }
-
-
-
-
-
-
-
-
-
 
 #editar:hover {
   opacity: 1;
@@ -217,10 +205,13 @@ a {
   opacity: 1;
  }
 
-#editarTarefa {
-  border: 1px solid var(--secondary);
+/* #editar { */
+  /* border: 1px solid var(--secondary); */
+/* } */
+/*  */
 
-}
+
+
 
 /* Tarefas terminadas ----------------------------------------------------------- */
 

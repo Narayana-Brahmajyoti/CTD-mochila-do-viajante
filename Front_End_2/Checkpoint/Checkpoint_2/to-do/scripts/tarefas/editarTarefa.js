@@ -34,7 +34,7 @@ function editarTarefa(id, token){
     
     fetch(urleditarTarefa, endpoint)
     .then(response => {
-        if (response.status == 201) {
+        if (response.status == 200) {
             console.log("Tarefa editada com sucesso")
             return ("Tarefa editada com sucesso")
 

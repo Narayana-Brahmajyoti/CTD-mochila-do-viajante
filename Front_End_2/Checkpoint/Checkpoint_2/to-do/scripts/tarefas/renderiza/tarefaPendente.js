@@ -20,7 +20,8 @@ function tarefaPendente(tarefa) {
             </button>
             <p class="timestamp"><i class="far fa-calendar-alt"></i> ${dataConvertida}</p>
         </div>
-    </div>`
+    </div>
+    `
     ul.appendChild(li)
 
 }
