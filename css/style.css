@@ -62,3 +62,15 @@
         border-right-color: transparent;
     }
 }
+
+.card{
+    border: 1px solid var(--app-grey);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 3px 15px black;
+    overflow: auto;
+    text-align: center;
+}
+
+
+
