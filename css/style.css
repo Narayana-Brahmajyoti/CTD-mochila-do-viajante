@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+:root {
+    --primary: #4DE4CF;
+    --secondary: #8A6DF1;
+    --dark: #0B1E23;
+    --neutral: #F2F2F2;
+}
+
+.navbar {
+    background: linear-gradient(45deg, var(--primary), var(--secondary), var(--dark));
+    color: var(--neutral);    
+} 
+
+.dropdown-menu {
+    background: linear-gradient(45deg, var(--primary), var(--secondary), var(--dark));
+}
+
+
+.btn-primary {
+    background:linear-gradient(45deg, red, var(--secondary), var(--dark));
+}
+
+.container{
+    align-items: center;
+}
+
+#text0{
+    text-align: center;
+    border-right: 2px solid;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#text1 {
+    font: 400 3rem/1.5 'Aclonica', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.typing-animation {
+    animation: blinkCursor 0.5s infinite normal, typing 4s steps(40) 1s normal both infinite;
+
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: var(--dark);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
