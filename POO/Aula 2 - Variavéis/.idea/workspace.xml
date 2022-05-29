@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fa65088b-2554-4deb-8840-6750256e5271" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Aula 01 - O que é Java/mesaAula1-DefinindoMascotes/mesaAula1-DefinindoMascotes.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex1Aula2-EstruturaDeControle/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex1Aula2-EstruturaDeControle/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex1Aula2-EstruturaDeControle/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex1Aula2-EstruturaDeControle/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex1Aula2-EstruturaDeControle/ex1Aula2-EstruturaDeControle.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex1Aula2-EstruturaDeControle/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste/teste.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Front_End_1/Aula 4  - Introdução à linguagem HTML/olamundo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Front_End_1/Aula 4  - Introdução à linguagem HTML/olamundo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Front_End_1/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Front_End_1/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Front_End_1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Front_End_1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Front_End_2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Front_End_2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../css/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="29qIALBqsKKy2u3574Hr3fbMe1X" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Israel/Documents/Nara/CTD-digital-house/POO/Aula 1 - O que é Java/mesaAula1-DefinindoMascotes/src/Main.java"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa65088b-2554-4deb-8840-6750256e5271" name="Changes" comment="" />
+      <created>1653834043947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653834043947</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
