@@ -90,6 +90,28 @@
     #text2 {
         font: 400 4rem/1.5 'Aclonica', sans-serif;
     }
+    .typing-animation {
+        animation: blinkCursor 0.5s infinite normal, typing 4s steps(40) 1s normal both infinite;
+    
+    }
+    
+    @keyframes typing {
+        from{
+            width: 0;
+        }
+        to {
+            width: 45%;
+        }
+    }
+    
+    @keyframes blinkCursor {
+        from {
+            border-right-color: var(--dark);
+        }
+        to {
+            border-right-color: transparent;
+        }
+    }
 }
     
 
