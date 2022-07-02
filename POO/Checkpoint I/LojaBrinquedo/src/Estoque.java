@@ -1,7 +1,11 @@
+package lojabrinquedo;
 public class Estoque {
 
     private int quantidade;
     private double precoCompra;
+
+    private double precoRevenda;
+
 
     public Estoque(int quantidade, double precoCompra) {
         this.quantidade = quantidade;
@@ -15,6 +19,7 @@ public class Estoque {
     }
     public int saidaEstoque(int valor){
         return this.quantidade -= valor;
+
     }
     //cria os getters
     public int getQuantidade(){
@@ -22,7 +27,9 @@ public class Estoque {
 
     }
 
-    public double getPrecoCompra(){
+    public double getPrecoCompra() {
         return this.precoCompra;
     }
+
+
 }
