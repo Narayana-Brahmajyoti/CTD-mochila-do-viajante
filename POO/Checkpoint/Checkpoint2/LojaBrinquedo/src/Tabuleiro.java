@@ -1,17 +1,24 @@
 package lojabrinquedo;
 
-public class Boneca extends Brinquedo {
+public class Tabuleiro extends Brinquedo {
+    public static int setNome;
+    private Brinquedo brinquedo;
+    //Herda tudo, menos o construtor do tabuleiro
 
-
-    public Boneca(String nome, String marca, String classificacaoIndicativa, String idBrinquedo, int quantidade, double precoCompra) {
+    public Tabuleiro(String nome, String marca, String classificacaoIndicativa, String idBrinquedo, int quantidade, double precoCompra) {
         super(nome, marca, classificacaoIndicativa, idBrinquedo, quantidade, precoCompra);
 
     }
 
+
+
+    //implementa a lógica da margem.. é abstract? Pegar preço da compra e margem
+
+
+
     @Override
     public double PrecoVenda(double precoCompra) {
-        return this.getPrecoCompra() + (this.getPrecoCompra() * 0.6);
-
+        return super.getPrecoCompra() + (super.getPrecoCompra() * 0.3);
     }
 
     @Override
@@ -27,7 +34,7 @@ public class Boneca extends Brinquedo {
     }
 
     public String imprimirInfosComuns(){
-        System.out.println("\n" + "-----Informações das Bonecas-----");
+        System.out.println("\n" +"-----Informações dos Jogos de tabuleiros-----");
         this.infosComuns();
 
         return "----------XXXX----------";
@@ -35,3 +42,4 @@ public class Boneca extends Brinquedo {
 
 
 }
+
