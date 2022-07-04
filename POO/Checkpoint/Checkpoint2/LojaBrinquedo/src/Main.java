@@ -87,7 +87,7 @@ public class Main {
                 listaBrinquedos.add(listaBrinquedos);
                 }else if(opcao == 2){
                     if(listaBrinquedos.isEmpty()){
-                    System.out.println("Não existem pessoas cadatradas, pressione uma tecla para continuar!");
+                    System.out.println("Não existem brinquedos cadatrados, pressione uma tecla para continuar!");
                     sc.nextLine();
                 }else{
                     System.out.println(listaBrinquedos.toString());
