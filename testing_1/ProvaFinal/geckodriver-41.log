@@ -1,0 +1,13 @@
+1657095337811	geckodriver	INFO	Listening on 127.0.0.1:50194
+1657095340785	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50195" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Israel\\AppData\\Local\\Temp\\rust_mozprofileTr47KQ"
+1657095341361	Marionette	INFO	Marionette enabled
+1657095341366	Marionette	INFO	Listening on port 50204
+WebDriver BiDi listening on ws://localhost:50195
+Read port: 50204
+1657095341564	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Israel\\AppData\\Local\\Temp\\rust_mozprofileTr47KQ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50195/devtools/browser/e5c2b82f-05b5-4afc-b1b3-b128be80ba21
+1657095396529	Marionette	INFO	Stopped listening on port 50204
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 1324, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:723
+JavaScript error: resource://gre/modules/CrashManager.jsm, line 906: AbortError: IOUtils: Shutting down and refusing additional I/O tasks
