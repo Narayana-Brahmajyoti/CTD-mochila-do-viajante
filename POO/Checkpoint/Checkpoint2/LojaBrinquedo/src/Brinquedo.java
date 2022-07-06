@@ -41,15 +41,18 @@ public abstract class Brinquedo {
 
 
 
-    public Brinquedo(String nome, String marca, String classificacaoIndicativa, String idBrinquedo, int quantidade, double precoCompra) {
+    public Brinquedo(String nome, String idBrinquedo) {
         this.nome = nome;
-        this.marca = marca;
-        this.classificacaoIndicativa = classificacaoIndicativa;
         this.idBrinquedo = idBrinquedo;
-        this.estoque = new Estoque(quantidade, precoCompra);
+
 
     }
 
+    @Override
+    public String toString() {
+        return this.nome + " " + this.idBrinquedo;
+    }
+    /*
     public void infosComuns(){
         System.out.println("\n" + "Informações Brinquedo: " + this.getNome());
         System.out.println("Marca do produto: " + this.getMarca());
@@ -98,7 +101,7 @@ public abstract class Brinquedo {
     public String getMarca() {
         return marca;
     }
-
+*/
 
 }
 

@@ -1,19 +1,25 @@
 package lojabrinquedo;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Estoque {
 
     private int quantidade;
-    private final double precoCompra;
+    private double precoCompra;
+    private List<Brinquedo> listaBrinquedo = new ArrayList<Brinquedo>();
 
 
 
-
-
-    public Estoque(int quantidade, double precoCompra) {
-        this.quantidade = quantidade;
-        this.precoCompra = precoCompra;
-
+    public void addBrinquedo(Brinquedo brinquedo){
+        this.listaBrinquedo.add(brinquedo);
     }
-
+    public void mostrarLista(){
+        for(Brinquedo brinquedo : listaBrinquedo){
+            System.out.println(brinquedo);
+        }
+    }
+/*
     //Pega o valor que está entrando e soma com a quantidade
     public int entradaEstoque(int valor){
         return this.quantidade += valor;
@@ -32,5 +38,12 @@ public class Estoque {
     public double getPrecoCompra() {
         return this.precoCompra;
     }
+*/
+    public List<Brinquedo> getListaBrinquedo() {
+        return listaBrinquedo;
+    }
 
+    public void setListaBrinquedo(List<Brinquedo> listaBrinquedo) {
+        this.listaBrinquedo = listaBrinquedo;
+    }
 }

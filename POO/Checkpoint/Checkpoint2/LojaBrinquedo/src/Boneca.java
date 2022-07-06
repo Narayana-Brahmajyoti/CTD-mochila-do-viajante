@@ -3,11 +3,11 @@ package lojabrinquedo;
 public class Boneca extends Brinquedo {
 
 
-    public Boneca(String nome, String marca, String classificacaoIndicativa, String idBrinquedo, int quantidade, double precoCompra) {
-        super(nome, marca, classificacaoIndicativa, idBrinquedo, quantidade, precoCompra);
+    public Boneca(String nome, String idBrinquedo) {
+        super(nome, idBrinquedo);
 
     }
-
+/*
     @Override
     public double PrecoVenda(double precoCompra) {
         return this.getPrecoCompra() + (this.getPrecoCompra() * 0.6);
@@ -33,5 +33,5 @@ public class Boneca extends Brinquedo {
         return "----------XXXX----------";
     }
 
-
+*/
 }

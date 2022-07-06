@@ -3,12 +3,12 @@ package lojabrinquedo;
 public class Carrinho extends Brinquedo {
 
     private Brinquedo brinquedo;
-    public Carrinho(String nome, String marca, String classificacaoIndicativa, String idBrinquedo, int quantidade, double precoCompra) {
-        super(nome, marca, classificacaoIndicativa, idBrinquedo, quantidade, precoCompra);
+    public Carrinho(String nome, String idBrinquedo) {
+        super(nome, idBrinquedo);
 
     }
 
-
+/*
     @Override
     public double PrecoVenda(double precoCompra) {
         return super.getPrecoCompra() + (super.getPrecoCompra() * 0.5);
@@ -33,7 +33,7 @@ public class Carrinho extends Brinquedo {
 
         return "----------XXXX----------";
     }
-
+*/
 }
 
 

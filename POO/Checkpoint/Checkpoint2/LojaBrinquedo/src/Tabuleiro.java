@@ -5,13 +5,13 @@ public class Tabuleiro extends Brinquedo {
     private Brinquedo brinquedo;
     //Herda tudo, menos o construtor do tabuleiro
 
-    public Tabuleiro(String nome, String marca, String classificacaoIndicativa, String idBrinquedo, int quantidade, double precoCompra) {
-        super(nome, marca, classificacaoIndicativa, idBrinquedo, quantidade, precoCompra);
+    public Tabuleiro(String nome, String idBrinquedo) {
+        super(nome, idBrinquedo);
 
     }
 
 
-
+/*
     //implementa a lógica da margem.. é abstract? Pegar preço da compra e margem
 
 
@@ -39,7 +39,7 @@ public class Tabuleiro extends Brinquedo {
 
         return "----------XXXX----------";
     }
-
+*/
 
 }
 

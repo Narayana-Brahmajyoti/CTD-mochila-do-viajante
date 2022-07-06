@@ -6,99 +6,81 @@ import java.util.Scanner;
 
 
 public class Main {
+
+
     public static void main(String[] args) {
-        dadosBrinquedos();
-    }
-    public static void dadosBrinquedos(){
-        Scanner sc =  new Scanner(System.in);
-        Brinquedo brinquedo;
-        List<Brinquedo> listaBrinquedos = new ArrayList<Brinquedo>();
-        int opcao = 0;
+        Scanner entrada = new Scanner(System.in);
+        Estoque estoque = new Estoque();
+        boolean continuarLooping = true;
+        while (continuarLooping) {
 
-        do {
-            System.out.println("-----Escolha uma das opções abaixo-----");
-            System.out.println("Opção 1 - Cadastrar brinquedos");
-            System.out.println("Opção 2 - Mostrar brinquedos cadastrados");
-            System.out.println("Opção 3 - Sair do programa");
-            System.out.println("---------------------------------------");
+            System.out.println("---------Escolha uma das opções abaixo---------");
+            System.out.println("|   Opção 1 - Cadastrar brinquedos            |");
+            System.out.println("|   Opção 2 - Mostrar brinquedos cadastrados  |");
+            System.out.println("|   Opção 3 - Sair do programa                |");
+            System.out.println("-----------------------------------------------");
 
-            System.out.println("Digite aqui sua opçãp: ");
-            opcao = Integer.parseInt(sc.nextLine());
+            int operacao = entrada.nextInt();
 
-            if(opcao == 1){
-                //Cria um novo objeto
-                System.out.println("--Qual brinquedo você gostaria de cadastrar no sistema?--");
-                System.out.println("Opção 1 - Boneca");
-                System.out.println("Opção 2 - Carrinho");
-                System.out.println("Opção 3 - Tabuleiro");
-                System.out.println("---------------------------------------");
+            switch (operacao) {
 
-                System.out.println("Digite aqui sua opçãp: ");
-                int opcao1 = Integer.parseInt(sc.nextLine());
+                case 1:
 
-                switch (opcao1){
-                    case 1:
-                        Boneca setTipoBrinquedo1 = new Boneca();
-                        System.out.println("Digite o nome do brinquedo: ");
-                        String nome = sc.nextLine();
-                        System.out.println("Digite a marca do brinquedo: ");
-                        String marca = sc.nextLine();
-                        System.out.println("Digite a classificação indicativa do brinquedo: ");
-                        String classificacaoIndicativa = sc.nextLine();
-                        System.out.println("Digite o Id do brinquedo: ");
-                        String idBrinquedo = sc.nextLine();
-                        System.out.println("Digite quantidade de brinquedos para dar entrada no estoque: ");
-                        String setQuantidade = sc.nextLine();
-                        System.out.println("Digite o valor unitário do produto: ");
-                        String precoCompra = sc.nextLine();
-                        break;
-                    case 2:
-                        Carrinho setTipoBrinquedo2 = new Carrinho();
-                        System.out.println("Digite o nome do brinquedo: ");
-                        String setNome = sc.nextLine();
-                        System.out.println("Digite a marca do brinquedo: ");
-                        String setMarca = sc.nextLine();
-                        System.out.println("Digite a classificação indicativa do brinquedo: ");
-                        String setClassificacaoIndicativa = sc.nextLine();
-                        System.out.println("Digite o Id do brinquedo: ");
-                        String setIdBrinquedo = sc.nextLine();
-                        System.out.println("Digite quantidade de brinquedos para dar entrada no estoque: ");
-                        String setQuantidade = sc.nextLine();
-                        System.out.println("Digite o valor unitário do produto: ");
-                        String setPrecoCompra = sc.nextLine();
-                        break;
-                    case 3:
-                        Tabuleiro getTipoBrinquedo3 = new Tabuleiro
-                        System.out.println("Digite o nome do brinquedo: ");
-                        String setNome = sc.nextLine();
-                        System.out.println("Digite a marca do brinquedo: ");
-                        String setMarca = sc.nextLine();
-                        System.out.println("Digite a classificação indicativa do brinquedo: ");
-                        String setClassificacaoIndicativa = sc.nextLine();
-                        System.out.println("Digite o Id do brinquedo: ");
-                        String setIdBrinquedo = sc.nextLine();
-                        System.out.println("Digite quantidade de brinquedos para dar entrada no estoque: ");
-                        String setQuantidade = sc.nextLine();
-                        System.out.println("Digite o valor unitário do produto: ");
-                        String setPrecoCompra = sc.nextLine();
-                        break;
-                }
-                //Guarda o objeto brinquedo em uma lista.
-                listaBrinquedos.add(listaBrinquedos);
-                }else if(opcao == 2){
-                    if(listaBrinquedos.isEmpty()){
-                    System.out.println("Não existem brinquedos cadatrados, pressione uma tecla para continuar!");
-                    sc.nextLine();
-                }else{
-                    System.out.println(listaBrinquedos.toString());
+                    System.out.println("--Qual brinquedo você gostaria de cadastrar no sistema?--");
+                    System.out.println("|   Opção 1 - Boneca        |");
+                    System.out.println("|   Opção 2 - Carrinho      |");
+                    System.out.println("|   Opção 3 - Tabuleiro     |");
+                    System.out.println("---------------------------------------");
 
-                    System.out.println("Pressione um tecla para continuar.");
-                    sc.nextLine();
-                }
-        } while (opcao != 0);
-        sc.close();
-                
+                    System.out.println("Digite aqui sua opção: ");
+                    int opcao = entrada.nextInt();
+
+                    switch (opcao) {
+                        case 1:
+
+                            System.out.println("Digite o nome da boneca: ");
+                            String nomeBoneca = entrada.next();
+                            System.out.println("Digite o Id da boneca: ");
+                            String idBoneca = entrada.next();
+                            Boneca boneca = new Boneca(nomeBoneca, idBoneca);
+                            estoque.addBrinquedo(boneca);
+                            break;
+                        case 2:
+
+                            System.out.println("Digite o nome do carrinho: ");
+                            String nomeCarrinho = entrada.next();
+                            System.out.println("Digite o Id do carrinho: ");
+                            String IdCarrinho = entrada.next();
+                            Carrinho carrinho = new Carrinho(nomeCarrinho, IdCarrinho);
+                            estoque.addBrinquedo(carrinho);
+                            break;
+
+                        case 3:
+
+                            System.out.println("Digite o nome do tabuleiro: ");
+                            String nomeTabuleiro = entrada.next();
+                            System.out.println("Digite o Id do tabuleiro: ");
+                            String idTabuleiro = entrada.next();
+                            Tabuleiro tabuleiro = new Tabuleiro(nomeTabuleiro, idTabuleiro);
+                            estoque.addBrinquedo(tabuleiro);
+                            break;
+                        default:
+                            throw new IllegalStateException("Unexpected value: " + opcao);
+                    }
+
+                case 2:
+                    estoque.mostrarLista();
+                    break;
+                case 3:
+                    continuarLooping = false;
+                    break;
+
+            }
+
         }
+    }
+}
+
 
 
 
@@ -140,5 +122,5 @@ public class Main {
         System.out.println(boneca2.imprimirInfosComuns());
         System.out.println(boneca3.imprimirInfosComuns());
     */
-    }
-}
+
+
