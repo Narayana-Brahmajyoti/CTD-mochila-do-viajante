@@ -7,7 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="aula20-Selenium" />
+        <module name="aula20-TesteSelenium" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aula20-Selenium" target="11" />
+      <module name="aula20-TesteSelenium" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

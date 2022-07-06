@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Aula 20 - Testes automatizados Seleniun.iml" filepath="$PROJECT_DIR$/.idea/Aula 20 - Testes automatizados Seleniun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula20-Selenium/aula20-Selenium.iml" filepath="$PROJECT_DIR$/aula20-Selenium/aula20-Selenium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula20-TesteSelenium/aula20-TesteSelenium.iml" filepath="$PROJECT_DIR$/aula20-TesteSelenium/aula20-TesteSelenium.iml" />
+    </modules>
+  </component>
+</project>
