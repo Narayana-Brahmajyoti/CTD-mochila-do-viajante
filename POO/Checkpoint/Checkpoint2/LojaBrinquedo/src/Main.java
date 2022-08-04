@@ -27,13 +27,14 @@ public class Main {
                 case 1:
 
                     System.out.println("--Qual brinquedo você gostaria de cadastrar no sistema?--");
-                    System.out.println("|   Opção 1 - Boneca        |");
-                    System.out.println("|   Opção 2 - Carrinho      |");
-                    System.out.println("|   Opção 3 - Tabuleiro     |");
-                    System.out.println("---------------------------------------");
+                    System.out.println("              |   Opção 1 - Boneca        |              ");
+                    System.out.println("              |   Opção 2 - Carrinho      |              ");
+                    System.out.println("              |   Opção 3 - Tabuleiro     |              ");
+                    System.out.println("-----------------------==================----------------");
 
                     System.out.println("Digite aqui sua opção: ");
                     int opcao = entrada.nextInt();
+                    break;
 
                     switch (opcao) {
                         case 1:
@@ -42,7 +43,11 @@ public class Main {
                             String nomeBoneca = entrada.next();
                             System.out.println("Digite o Id da boneca: ");
                             String idBoneca = entrada.next();
-                            Boneca boneca = new Boneca(nomeBoneca, idBoneca);
+                            System.out.println("Digite a marca da boneca: ");
+                            String marcaBoneca = entrada.next();
+                            System.out.println("Digite a classificação indicativa da boneca: ");
+                            String classIndicativaBoneca = entrada.next();
+                            Boneca boneca = new Boneca(nomeBoneca, idBoneca, marcaBoneca, classIndicativaBoneca);
                             estoque.addBrinquedo(boneca);
                             break;
                         case 2:
@@ -51,7 +56,11 @@ public class Main {
                             String nomeCarrinho = entrada.next();
                             System.out.println("Digite o Id do carrinho: ");
                             String IdCarrinho = entrada.next();
-                            Carrinho carrinho = new Carrinho(nomeCarrinho, IdCarrinho);
+                            System.out.println("Digite a marca da carrinho: ");
+                            String marcaCarrinho = entrada.next();
+                            System.out.println("Digite a classificação indicativa da carrinho: ");
+                            String classIndicativaCarrinho = entrada.next();
+                            Carrinho carrinho = new Carrinho(nomeCarrinho, IdCarrinho, marcaCarrinho, classIndicativaCarrinho);
                             estoque.addBrinquedo(carrinho);
                             break;
 
@@ -61,11 +70,16 @@ public class Main {
                             String nomeTabuleiro = entrada.next();
                             System.out.println("Digite o Id do tabuleiro: ");
                             String idTabuleiro = entrada.next();
-                            Tabuleiro tabuleiro = new Tabuleiro(nomeTabuleiro, idTabuleiro);
+                            System.out.println("Digite a marca da tabuleiro: ");
+                            String marcaTabuleiro = entrada.next();
+                            System.out.println("Digite a classificação indicativa da tabuleiro: ");
+                            String classIndicativaTabuleiro = entrada.next();
+                            Tabuleiro tabuleiro = new Tabuleiro(nomeTabuleiro, idTabuleiro, marcaTabuleiro, classIndicativaTabuleiro);
                             estoque.addBrinquedo(tabuleiro);
                             break;
                         default:
                             throw new IllegalStateException("Unexpected value: " + opcao);
+                            throw new NullPointerException("Os Campos não podem ser nulos");
                     }
 
                 case 2:

@@ -11,47 +11,34 @@ public abstract class Brinquedo {
     //Criando um atributo do tipo Classe
     private Estoque estoque;
 
-    public Boneca getTipoBrinquedo1() {
-        return tipoBrinquedo1;
-    }
+    
 
-    public void setTipoBrinquedo1(Boneca tipoBrinquedo1) {
-        this.tipoBrinquedo1 = tipoBrinquedo1;
-    }
-
-    public Carrinho getTipoBrinquedo2() {
-        return tipoBrinquedo2;
-    }
-
-    public void setTipoBrinquedo2(Carrinho tipoBrinquedo2) {
-        this.tipoBrinquedo2 = tipoBrinquedo2;
-    }
-
-    public Tabuleiro getTipoBrinquedo3() {
-        return tipoBrinquedo3;
-    }
-
-    public void setTipoBrinquedo3(Tabuleiro tipoBrinquedo3) {
-        this.tipoBrinquedo3 = tipoBrinquedo3;
-    }
-
-    private Boneca tipoBrinquedo1;
-    private Carrinho tipoBrinquedo2;
-    private Tabuleiro tipoBrinquedo3;
-
-
-
-    public Brinquedo(String nome, String idBrinquedo) {
+    public Brinquedo(String nome, String idBrinquedo, String marca, String classificacaoIndicativa) {
         this.nome = nome;
         this.idBrinquedo = idBrinquedo;
+        this.marca = marca;
+        this.classificacaoIndicativa = classificacaoIndicativa;
 
 
     }
 
     @Override
     public String toString() {
-        return this.nome + " " + this.idBrinquedo;
+        return this.nome + "/n" 
+        + this.idBrinquedo + "/n" 
+        + this.marca + "/n" 
+        + this.classificacaoIndicativa;
     }
+
+    public Brinquedo (String nome, String idBrinquedo, String marca) {
+        if (nome == null && idBrinquedo == null && marca == null ){
+            throw new NullPointerException("Os Campos não podem ser nulos");
+        }
+        this.nome = nome;
+        this.idBrinquedo = idBrinquedo;
+        this.marca = marca;
+    }
+
     /*
     public void infosComuns(){
         System.out.println("\n" + "Informações Brinquedo: " + this.getNome());

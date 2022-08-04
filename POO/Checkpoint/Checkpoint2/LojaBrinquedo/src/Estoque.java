@@ -16,7 +16,7 @@ public class Estoque {
     }
     public void mostrarLista(){
         for(Brinquedo brinquedo : listaBrinquedo){
-            System.out.println(brinquedo);
+            System.out.println(brinquedo.toString());
         }
     }
 /*
