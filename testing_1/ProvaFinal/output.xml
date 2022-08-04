@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220706 05:31:29.745" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220706 20:45:12.499" rpa="false" schemaversion="3">
 <suite id="s1" name="narayanaBrahmajyoti" source="C:\Users\Israel\Documents\Nara\CTD-mochila-do-viajante\testing_1\ProvaFinal\narayanaBrahmajyoti.robot">
 <test id="s1-t1" name="Processo de compra de uma camiseta no site Chico Rei" line="9">
 <kw name="Acessar o site Chico Rei" library="narayanaBrahmajyoti">
@@ -7,460 +7,97 @@
 <arg>${SITE}</arg>
 <arg>${NAVEGADOR}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220706 05:31:29.971" level="INFO">Opening browser 'Firefox' to base url 'https://chicorei.com/'.</msg>
-<msg timestamp="20220706 05:31:29.977" level="INFO">Firefox driver log is always forced to to: C:\Users\Israel\Documents\Nara\CTD-mochila-do-viajante\testing_1\ProvaFinal\geckodriver-74.log</msg>
-<status status="PASS" starttime="20220706 05:31:29.971" endtime="20220706 05:31:39.047"/>
+<msg timestamp="20220706 20:45:12.780" level="INFO">Opening browser 'Firefox' to base url 'https://chicorei.com/'.</msg>
+<msg timestamp="20220706 20:45:12.786" level="INFO">Firefox driver log is always forced to to: C:\Users\Israel\Documents\Nara\CTD-mochila-do-viajante\testing_1\ProvaFinal\geckodriver-89.log</msg>
+<status status="PASS" starttime="20220706 20:45:12.780" endtime="20220706 20:45:22.955"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220706 05:31:39.048" endtime="20220706 05:31:39.056"/>
+<status status="PASS" starttime="20220706 20:45:22.956" endtime="20220706 20:45:22.967"/>
 </kw>
-<status status="PASS" starttime="20220706 05:31:29.970" endtime="20220706 05:31:39.056"/>
+<status status="PASS" starttime="20220706 20:45:12.779" endtime="20220706 20:45:22.968"/>
 </kw>
-<status status="PASS" starttime="20220706 05:31:29.969" endtime="20220706 05:31:39.061"/>
+<status status="PASS" starttime="20220706 20:45:12.776" endtime="20220706 20:45:23.018"/>
 </test>
 <test id="s1-t2" name="Processo de compra de uma camiseta &quot;Vira lata caramelo&quot; no site Chico Rei" line="11">
 <kw name="Clicar em &quot;Concordar&quot; no aviso sobre Cookies" library="narayanaBrahmajyoti">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${CONCORDAR_COOKIES}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220706 05:31:39.080" level="INFO">Clicking element 'css=#confirmPolicyButton'.</msg>
-<status status="PASS" starttime="20220706 05:31:39.079" endtime="20220706 05:31:39.350"/>
+<msg timestamp="20220706 20:45:23.022" level="INFO">Clicking element 'css=#confirmPolicyButton'.</msg>
+<status status="PASS" starttime="20220706 20:45:23.021" endtime="20220706 20:45:23.454"/>
 </kw>
-<status status="PASS" starttime="20220706 05:31:39.076" endtime="20220706 05:31:39.350"/>
+<status status="PASS" starttime="20220706 20:45:23.021" endtime="20220706 20:45:23.454"/>
 </kw>
 <kw name="Pesquisar por &quot;Vira lata caramelo&quot; e selecionar a primeira opção da lista de resultados" library="narayanaBrahmajyoti">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${CAMPO_PESQUISA}</arg>
 <arg>${PESQ_VIRA_LATA}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220706 05:31:39.353" level="INFO">Typing text 'Vira Lata Caramelo' into text field 'id=header-search-input-desktop'.</msg>
-<status status="PASS" starttime="20220706 05:31:39.352" endtime="20220706 05:31:39.471"/>
+<msg timestamp="20220706 20:45:23.465" level="INFO">Typing text 'Vira Lata Caramelo' into text field 'id=header-search-input-desktop'.</msg>
+<status status="PASS" starttime="20220706 20:45:23.464" endtime="20220706 20:45:23.600"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>${SLEEP}</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220706 05:31:41.483" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220706 05:31:39.471" endtime="20220706 05:31:41.483"/>
+<msg timestamp="20220706 20:45:25.602" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220706 20:45:23.600" endtime="20220706 20:45:25.602"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${RES_PESQ_VIRA_LATA}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220706 05:31:41.484" level="INFO">Clicking element 'xpath=//span[contains(.,'De R$ 74,99 por R$ 69,99')]'.</msg>
-<status status="PASS" starttime="20220706 05:31:41.483" endtime="20220706 05:31:43.416"/>
+<msg timestamp="20220706 20:45:25.603" level="INFO">Clicking element 'xpath=//div/div/div[2]/div'.</msg>
+<msg timestamp="20220706 20:45:25.808" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220706 20:45:25.809" level="FAIL">ElementNotInteractableException: Message: Element &lt;div class="header-search-overlay hidden-xs"&gt; could not be scrolled into view
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.jsm:296:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:156:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.js:125:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:203:24
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:91:31
+</msg>
+<status status="FAIL" starttime="20220706 20:45:25.603" endtime="20220706 20:45:25.930"/>
 </kw>
-<status status="PASS" starttime="20220706 05:31:39.352" endtime="20220706 05:31:43.416"/>
+<status status="FAIL" starttime="20220706 20:45:23.463" endtime="20220706 20:45:25.931"/>
 </kw>
 <kw name="Validar se o valor do produto é &quot;R$ 69,99&quot;" library="narayanaBrahmajyoti">
-<kw name="Sleep" library="BuiltIn">
-<arg>${SLEEP}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220706 05:31:45.430" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220706 05:31:43.418" endtime="20220706 05:31:45.430"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>${CONFIRMAR_VALOR_CAMISA}</arg>
-<arg>${VALOR_CAMISA}</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20220706 05:31:45.465" level="INFO">Element 'xpath=//p[contains(.,'R$ 69,99')]' contains text 'R$ 69,99'.</msg>
-<status status="PASS" starttime="20220706 05:31:45.430" endtime="20220706 05:31:45.465"/>
-</kw>
-<status status="PASS" starttime="20220706 05:31:43.417" endtime="20220706 05:31:45.465"/>
+<status status="NOT RUN" starttime="20220706 20:45:25.932" endtime="20220706 20:45:25.932"/>
 </kw>
 <kw name="Selecionar um tamanho, cor e clicar em comprar" library="narayanaBrahmajyoti">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${TAMANHO_CAMISA}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220706 05:31:45.467" level="INFO">Clicking element 'xpath=//div[3]/nav/div[2]'.</msg>
-<status status="PASS" starttime="20220706 05:31:45.467" endtime="20220706 05:31:45.709"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${COR_CAMISA}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220706 05:31:45.709" level="INFO">Clicking element 'css=.cr-option-squared:nth-child(2)'.</msg>
-<status status="PASS" starttime="20220706 05:31:45.709" endtime="20220706 05:31:45.928"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${BTN_COMPRAR}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220706 05:31:45.928" level="INFO">Clicking element 'css=.btn-loading:nth-child(1) &gt; span:nth-child(2)'.</msg>
-<status status="PASS" starttime="20220706 05:31:45.928" endtime="20220706 05:31:46.204"/>
-</kw>
-<status status="PASS" starttime="20220706 05:31:45.466" endtime="20220706 05:31:46.204"/>
+<status status="NOT RUN" starttime="20220706 20:45:25.933" endtime="20220706 20:45:25.933"/>
 </kw>
 <kw name="Clicar em &quot;Ver sacola&quot;" library="narayanaBrahmajyoti">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${BTN_VER_SACOLA}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220706 05:31:46.208" level="INFO">Clicking element 'xpath=//div[4]/div/a/div'.</msg>
-<status status="PASS" starttime="20220706 05:31:46.208" endtime="20220706 05:31:47.681"/>
-</kw>
-<status status="PASS" starttime="20220706 05:31:46.207" endtime="20220706 05:31:47.681"/>
+<status status="NOT RUN" starttime="20220706 20:45:25.933" endtime="20220706 20:45:25.933"/>
 </kw>
 <kw name="Validar se a mensagem &quot;VOCÊ ESTÁ ACUMULANDO 1 PONTO NO CARTÃO FIDELIDADE!&quot; está sendo exibida" library="narayanaBrahmajyoti">
-<kw name="Sleep" library="BuiltIn">
-<arg>${SLEEP}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220706 05:31:49.685" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220706 05:31:47.682" endtime="20220706 05:31:49.685"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>${VALIDAR_MENSAGEM}</arg>
-<arg>${TXT_MSG}</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20220706 05:31:49.688" level="FAIL">Variable '${TXT_MSG}' not found.</msg>
-<status status="FAIL" starttime="20220706 05:31:49.686" endtime="20220706 05:31:49.688"/>
-</kw>
-<status status="FAIL" starttime="20220706 05:31:47.682" endtime="20220706 05:31:49.689"/>
+<status status="NOT RUN" starttime="20220706 20:45:25.934" endtime="20220706 20:45:25.934"/>
 </kw>
 <kw name="Clicar em &quot;Fechar pedido&quot;" library="narayanaBrahmajyoti">
-<status status="NOT RUN" starttime="20220706 05:31:49.691" endtime="20220706 05:31:49.691"/>
+<status status="NOT RUN" starttime="20220706 20:45:25.937" endtime="20220706 20:45:25.937"/>
 </kw>
-<status status="FAIL" starttime="20220706 05:31:39.072" endtime="20220706 05:31:49.692">Variable '${TXT_MSG}' not found.</status>
-</test>
-<test id="s1-t3" name="Processo de compra de uma camiseta no site Chico Rei" line="21">
-<kw name="Acessar o site Chico Rei" library="narayanaBrahmajyoti">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${SITE}</arg>
-<arg>${NAVEGADOR}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220706 05:31:49.698" level="INFO">Opening browser 'Firefox' to base url 'https://chicorei.com/'.</msg>
-<msg timestamp="20220706 05:31:49.705" level="INFO">Firefox driver log is always forced to to: C:\Users\Israel\Documents\Nara\CTD-mochila-do-viajante\testing_1\ProvaFinal\geckodriver-75.log</msg>
-<status status="PASS" starttime="20220706 05:31:49.698" endtime="20220706 05:31:57.870"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<msg timestamp="20220706 05:31:57.934" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: Browsing context has been discarded
+<status status="FAIL" starttime="20220706 20:45:23.020" endtime="20220706 20:45:25.938">ElementNotInteractableException: Message: Element &lt;div class="header-search-overlay hidden-xs"&gt; could not be scrolled into view
 Stacktrace:
 WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
-NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.jsm:440:5
-assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.jsm:445:13
-assert.open@chrome://remote/content/shared/webdriver/Assert.jsm:153:4
-GeckoDriver.prototype.takeScreenshot@chrome://remote/content/marionette/driver.js:2233:10
-despatch@chrome://remote/content/marionette/server.js:306:40
-execute@chrome://remote/content/marionette/server.js:279:16
-onPacket/&lt;@chrome://remote/content/marionette/server.js:252:20
-onPacket@chrome://remote/content/marionette/server.js:253:9
-_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.js:500:20
-observe@resource://gre/modules/AsyncShutdown.jsm:575:16
-</msg>
-<msg timestamp="20220706 05:31:58.025" level="FAIL">NoSuchWindowException: Message: Browsing context has been discarded
-Stacktrace:
-WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
-NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.jsm:440:5
-assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.jsm:445:13
-assert.open@chrome://remote/content/shared/webdriver/Assert.jsm:153:4
-GeckoDriver.prototype.maximizeWindow@chrome://remote/content/marionette/driver.js:2382:10
-despatch@chrome://remote/content/marionette/server.js:306:40
-execute@chrome://remote/content/marionette/server.js:279:16
-onPacket/&lt;@chrome://remote/content/marionette/server.js:252:20
-onPacket@chrome://remote/content/marionette/server.js:253:9
-_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.js:500:20
-observe@resource://gre/modules/AsyncShutdown.jsm:575:16
-</msg>
-<status status="FAIL" starttime="20220706 05:31:57.870" endtime="20220706 05:31:58.034"/>
-</kw>
-<status status="FAIL" starttime="20220706 05:31:49.697" endtime="20220706 05:31:58.035"/>
-</kw>
-<status status="FAIL" starttime="20220706 05:31:49.696" endtime="20220706 05:31:58.038">NoSuchWindowException: Message: Browsing context has been discarded
-Stacktrace:
-WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
-NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.jsm:440:5
-assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.jsm:445:13
-assert.open@chrome://remote/content/shared/webdriver/Assert.jsm:153:4
-GeckoDriver.prototype.maximizeWindow@chrome://remote/content/marionette/driver.js:2382:10
-despatch@chrome://remote/content/marionette/server.js:306:40
-execute@chrome://remote/content/marionette/server.js:279:16
-onPacket/&lt;@chrome://remote/content/marionette/server.js:252:20
-onPacket@chrome://remote/content/marionette/server.js:253:9
-_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.js:500:20
-observe@resource://gre/modules/AsyncShutdown.jsm:575:16
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.jsm:296:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:156:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.js:125:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:203:24
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:91:31
 </status>
 </test>
-<test id="s1-t4" name="Processo de compra de uma camiseta &quot; Amarelo é Desespero&quot; no site Chico Rei" line="23">
-<kw name="Clicar em &quot;Concordar&quot; no aviso sobre Cookies" library="narayanaBrahmajyoti">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${CONCORDAR_COOKIES}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220706 05:31:58.043" level="INFO">Clicking element 'css=#confirmPolicyButton'.</msg>
-<msg timestamp="20220706 05:31:58.048" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: Browsing context has been discarded
-Stacktrace:
-WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
-NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.jsm:440:5
-assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.jsm:445:13
-assert.open@chrome://remote/content/shared/webdriver/Assert.jsm:153:4
-GeckoDriver.prototype.takeScreenshot@chrome://remote/content/marionette/driver.js:2233:10
-despatch@chrome://remote/content/marionette/server.js:306:40
-execute@chrome://remote/content/marionette/server.js:279:16
-onPacket/&lt;@chrome://remote/content/marionette/server.js:252:20
-onPacket@chrome://remote/content/marionette/server.js:253:9
-_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.js:500:20
-observe@resource://gre/modules/AsyncShutdown.jsm:575:16
-</msg>
-<msg timestamp="20220706 05:31:58.050" level="FAIL">NoSuchWindowException: Message: Browsing context has been discarded
-Stacktrace:
-WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
-NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.jsm:440:5
-assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.jsm:445:13
-assert.open@chrome://remote/content/shared/webdriver/Assert.jsm:153:4
-GeckoDriver.prototype.findElements@chrome://remote/content/marionette/driver.js:1464:10
-despatch@chrome://remote/content/marionette/server.js:306:40
-execute@chrome://remote/content/marionette/server.js:279:16
-onPacket/&lt;@chrome://remote/content/marionette/server.js:252:20
-onPacket@chrome://remote/content/marionette/server.js:253:9
-_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.js:500:20
-observe@resource://gre/modules/AsyncShutdown.jsm:575:16
-</msg>
-<status status="FAIL" starttime="20220706 05:31:58.042" endtime="20220706 05:31:58.053"/>
-</kw>
-<status status="FAIL" starttime="20220706 05:31:58.042" endtime="20220706 05:31:58.054"/>
-</kw>
-<kw name="Pesquisar por &quot;Amarelo é desespero&quot; e selecionar a primeira opção da lista de resultados">
-<status status="NOT RUN" starttime="20220706 05:31:58.058" endtime="20220706 05:31:58.058"/>
-</kw>
-<kw name="Validar se o valor do produto é &quot;R$ 69,90&quot;">
-<status status="NOT RUN" starttime="20220706 05:31:58.059" endtime="20220706 05:31:58.059"/>
-</kw>
-<kw name="Selecionar um tamanho, cor e clicar em comprar" library="narayanaBrahmajyoti">
-<status status="NOT RUN" starttime="20220706 05:31:58.060" endtime="20220706 05:31:58.060"/>
-</kw>
-<kw name="Clicar em &quot;Ver sacola&quot;" library="narayanaBrahmajyoti">
-<status status="NOT RUN" starttime="20220706 05:31:58.060" endtime="20220706 05:31:58.060"/>
-</kw>
-<kw name="Validar se a mensagem &quot;Adquira o Chico Rei Prime para desfrutar de frete grátis por 1 ano em todos os pedidos, sem valor mínimo.&quot; está sendo exibida">
-<status status="NOT RUN" starttime="20220706 05:31:58.063" endtime="20220706 05:31:58.063"/>
-</kw>
-<kw name="Clicar em &quot;Fechar pedido&quot;" library="narayanaBrahmajyoti">
-<status status="NOT RUN" starttime="20220706 05:31:58.064" endtime="20220706 05:31:58.064"/>
-</kw>
-<kw name="Fechar Browser" library="narayanaBrahmajyoti">
-<status status="NOT RUN" starttime="20220706 05:31:58.064" endtime="20220706 05:31:58.064"/>
-</kw>
-<status status="FAIL" starttime="20220706 05:31:58.041" endtime="20220706 05:31:58.065">NoSuchWindowException: Message: Browsing context has been discarded
-Stacktrace:
-WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
-NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.jsm:440:5
-assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.jsm:445:13
-assert.open@chrome://remote/content/shared/webdriver/Assert.jsm:153:4
-GeckoDriver.prototype.findElements@chrome://remote/content/marionette/driver.js:1464:10
-despatch@chrome://remote/content/marionette/server.js:306:40
-execute@chrome://remote/content/marionette/server.js:279:16
-onPacket/&lt;@chrome://remote/content/marionette/server.js:252:20
-onPacket@chrome://remote/content/marionette/server.js:253:9
-_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.js:500:20
-observe@resource://gre/modules/AsyncShutdown.jsm:575:16
-</status>
-</test>
-<test id="s1-t5" name="Processo de compra de camiseta no site Chico Rei" line="34">
-<kw name="Acessar o site Chico Rei" library="narayanaBrahmajyoti">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${SITE}</arg>
-<arg>${NAVEGADOR}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220706 05:31:58.070" level="INFO">Opening browser 'Firefox' to base url 'https://chicorei.com/'.</msg>
-<msg timestamp="20220706 05:31:58.076" level="INFO">Firefox driver log is always forced to to: C:\Users\Israel\Documents\Nara\CTD-mochila-do-viajante\testing_1\ProvaFinal\geckodriver-76.log</msg>
-<status status="PASS" starttime="20220706 05:31:58.069" endtime="20220706 05:32:07.924"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220706 05:32:07.924" endtime="20220706 05:32:07.927"/>
-</kw>
-<status status="PASS" starttime="20220706 05:31:58.069" endtime="20220706 05:32:07.928"/>
-</kw>
-<status status="PASS" starttime="20220706 05:31:58.067" endtime="20220706 05:32:07.929"/>
-</test>
-<test id="s1-t6" name="Processo de compra de uma camiseta &quot;Erarr é humano&quot; no site do Chico Rei" line="36">
-<kw name="Clicar em &quot;Concordar&quot; no aviso sobre Cookies" library="narayanaBrahmajyoti">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${CONCORDAR_COOKIES}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220706 05:32:07.960" level="INFO">Clicking element 'css=#confirmPolicyButton'.</msg>
-<status status="PASS" starttime="20220706 05:32:07.959" endtime="20220706 05:32:08.406"/>
-</kw>
-<status status="PASS" starttime="20220706 05:32:07.959" endtime="20220706 05:32:08.407"/>
-</kw>
-<kw name="Pesquisar por &quot;Erarr&quot; e selecionar a primeira opção da lista de resultados">
-<msg timestamp="20220706 05:32:08.410" level="FAIL">No keyword with name 'Pesquisar por "Erarr" e selecionar a primeira opção da lista de resultados' found. Did you mean:
-    narayanaBrahmajyoti.Pesquisar Por "Vira Lata Caramelo" E Selecionar A Primeira Opção Da Lista De Resultados</msg>
-<status status="FAIL" starttime="20220706 05:32:08.410" endtime="20220706 05:32:08.410"/>
-</kw>
-<kw name="Validar se o valor do produto é &quot;R$ 69,90&quot;">
-<status status="NOT RUN" starttime="20220706 05:32:08.414" endtime="20220706 05:32:08.414"/>
-</kw>
-<kw name="Selecionar um tamanho, cor e clicar em comprar" library="narayanaBrahmajyoti">
-<status status="NOT RUN" starttime="20220706 05:32:08.417" endtime="20220706 05:32:08.417"/>
-</kw>
-<kw name="Clicar em &quot;Ver sacola&quot;" library="narayanaBrahmajyoti">
-<status status="NOT RUN" starttime="20220706 05:32:08.427" endtime="20220706 05:32:08.428"/>
-</kw>
-<kw name="Validar se a mensagem &quot;De segunda a sexta, das 8h às 20h.&quot; está sendo exibida">
-<status status="NOT RUN" starttime="20220706 05:32:08.432" endtime="20220706 05:32:08.433"/>
-</kw>
-<kw name="Clicar em &quot;Fechar pedido&quot;" library="narayanaBrahmajyoti">
-<status status="NOT RUN" starttime="20220706 05:32:08.440" endtime="20220706 05:32:08.440"/>
-</kw>
-<kw name="Fechar Browser" library="narayanaBrahmajyoti">
-<status status="NOT RUN" starttime="20220706 05:32:08.441" endtime="20220706 05:32:08.441"/>
-</kw>
-<status status="FAIL" starttime="20220706 05:32:07.958" endtime="20220706 05:32:08.441">No keyword with name 'Pesquisar por "Erarr" e selecionar a primeira opção da lista de resultados' found. Did you mean:
-    narayanaBrahmajyoti.Pesquisar Por "Vira Lata Caramelo" E Selecionar A Primeira Opção Da Lista De Resultados</status>
-</test>
-<test id="s1-t7" name="Processo de compra de camiseta no site Chico Rei" line="47">
-<kw name="Acessar o site Chico Rei" library="narayanaBrahmajyoti">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${SITE}</arg>
-<arg>${NAVEGADOR}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220706 05:32:08.460" level="INFO">Opening browser 'Firefox' to base url 'https://chicorei.com/'.</msg>
-<msg timestamp="20220706 05:32:08.466" level="INFO">Firefox driver log is always forced to to: C:\Users\Israel\Documents\Nara\CTD-mochila-do-viajante\testing_1\ProvaFinal\geckodriver-77.log</msg>
-<status status="PASS" starttime="20220706 05:32:08.458" endtime="20220706 05:32:18.694"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220706 05:32:18.695" endtime="20220706 05:32:18.702"/>
-</kw>
-<status status="PASS" starttime="20220706 05:32:08.456" endtime="20220706 05:32:18.703"/>
-</kw>
-<status status="PASS" starttime="20220706 05:32:08.451" endtime="20220706 05:32:18.707"/>
-</test>
-<test id="s1-t8" name="Processo de compra de uma camiseta &quot;Nem Te Vi&quot; no site do Chico Rei" line="49">
-<kw name="Clicar em &quot;Concordar&quot; no aviso sobre Cookies" library="narayanaBrahmajyoti">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${CONCORDAR_COOKIES}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220706 05:32:18.724" level="INFO">Clicking element 'css=#confirmPolicyButton'.</msg>
-<status status="PASS" starttime="20220706 05:32:18.723" endtime="20220706 05:32:19.074"/>
-</kw>
-<status status="PASS" starttime="20220706 05:32:18.723" endtime="20220706 05:32:19.074"/>
-</kw>
-<kw name="Pesquisar por &quot;Nem Te Vi&quot; e selecionar a primeira opção da lista de resultados">
-<msg timestamp="20220706 05:32:19.079" level="FAIL">No keyword with name 'Pesquisar por "Nem Te Vi" e selecionar a primeira opção da lista de resultados' found. Did you mean:
-    narayanaBrahmajyoti.Pesquisar Por "Vira Lata Caramelo" E Selecionar A Primeira Opção Da Lista De Resultados</msg>
-<status status="FAIL" starttime="20220706 05:32:19.079" endtime="20220706 05:32:19.079"/>
-</kw>
-<kw name="Validar se o valor do produto é &quot;R$ 69,90&quot;">
-<status status="NOT RUN" starttime="20220706 05:32:19.088" endtime="20220706 05:32:19.088"/>
-</kw>
-<kw name="Selecionar um tamanho, cor e clicar em comprar" library="narayanaBrahmajyoti">
-<status status="NOT RUN" starttime="20220706 05:32:19.090" endtime="20220706 05:32:19.090"/>
-</kw>
-<kw name="Clicar em &quot;Ver sacola&quot;" library="narayanaBrahmajyoti">
-<status status="NOT RUN" starttime="20220706 05:32:19.093" endtime="20220706 05:32:19.093"/>
-</kw>
-<kw name="Validar se a mensagem &quot;Compre parcelado com cartão ou á vista com boleto ou depósito&quot; está sendo exibida">
-<status status="NOT RUN" starttime="20220706 05:32:19.098" endtime="20220706 05:32:19.098"/>
-</kw>
-<kw name="Clicar em &quot;Fechar pedido&quot;" library="narayanaBrahmajyoti">
-<status status="NOT RUN" starttime="20220706 05:32:19.100" endtime="20220706 05:32:19.100"/>
-</kw>
-<kw name="Fechar Browser" library="narayanaBrahmajyoti">
-<status status="NOT RUN" starttime="20220706 05:32:19.101" endtime="20220706 05:32:19.101"/>
-</kw>
-<status status="FAIL" starttime="20220706 05:32:18.722" endtime="20220706 05:32:19.103">No keyword with name 'Pesquisar por "Nem Te Vi" e selecionar a primeira opção da lista de resultados' found. Did you mean:
-    narayanaBrahmajyoti.Pesquisar Por "Vira Lata Caramelo" E Selecionar A Primeira Opção Da Lista De Resultados</status>
-</test>
-<test id="s1-t9" name="Processo de compra de camiseta no site Chico Rei" line="60">
-<kw name="Acessar o site Chico Rei" library="narayanaBrahmajyoti">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${SITE}</arg>
-<arg>${NAVEGADOR}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220706 05:32:19.106" level="INFO">Opening browser 'Firefox' to base url 'https://chicorei.com/'.</msg>
-<msg timestamp="20220706 05:32:19.114" level="INFO">Firefox driver log is always forced to to: C:\Users\Israel\Documents\Nara\CTD-mochila-do-viajante\testing_1\ProvaFinal\geckodriver-78.log</msg>
-<status status="PASS" starttime="20220706 05:32:19.105" endtime="20220706 05:32:29.469"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220706 05:32:29.469" endtime="20220706 05:32:29.472"/>
-</kw>
-<status status="PASS" starttime="20220706 05:32:19.105" endtime="20220706 05:32:29.472"/>
-</kw>
-<status status="PASS" starttime="20220706 05:32:19.105" endtime="20220706 05:32:29.503"/>
-</test>
-<test id="s1-t10" name="Processo de compra de uma camiseta &quot;Alceu Dispor&quot; no site do Chico Rei" line="62">
-<kw name="Clicar em &quot;Concordar&quot; no aviso sobre Cookies" library="narayanaBrahmajyoti">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${CONCORDAR_COOKIES}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220706 05:32:29.821" level="INFO">Clicking element 'css=#confirmPolicyButton'.</msg>
-<status status="PASS" starttime="20220706 05:32:29.820" endtime="20220706 05:32:30.123"/>
-</kw>
-<status status="PASS" starttime="20220706 05:32:29.819" endtime="20220706 05:32:30.123"/>
-</kw>
-<kw name="Pesquisar por &quot;Alceu Dispor&quot; e selecionar a primeira opção da lista de resultados">
-<msg timestamp="20220706 05:32:30.131" level="FAIL">No keyword with name 'Pesquisar por "Alceu Dispor" e selecionar a primeira opção da lista de resultados' found. Did you mean:
-    narayanaBrahmajyoti.Pesquisar Por "Vira Lata Caramelo" E Selecionar A Primeira Opção Da Lista De Resultados</msg>
-<status status="FAIL" starttime="20220706 05:32:30.131" endtime="20220706 05:32:30.131"/>
-</kw>
-<kw name="Validar se o valor do produto é &quot;R$ 69,90&quot;">
-<status status="NOT RUN" starttime="20220706 05:32:30.134" endtime="20220706 05:32:30.135"/>
-</kw>
-<kw name="Selecionar um tamanho, cor e clicar em comprar" library="narayanaBrahmajyoti">
-<status status="NOT RUN" starttime="20220706 05:32:30.135" endtime="20220706 05:32:30.135"/>
-</kw>
-<kw name="Clicar em &quot;Ver sacola&quot;" library="narayanaBrahmajyoti">
-<status status="NOT RUN" starttime="20220706 05:32:30.137" endtime="20220706 05:32:30.137"/>
-</kw>
-<kw name="Validar se a mensagem &quot;Sua primeira troca na Chico Rei é por nossa conta!&quot; está sendo exibida">
-<status status="NOT RUN" starttime="20220706 05:32:30.155" endtime="20220706 05:32:30.155"/>
-</kw>
-<kw name="Clicar em &quot;Fechar pedido&quot;" library="narayanaBrahmajyoti">
-<status status="NOT RUN" starttime="20220706 05:32:30.181" endtime="20220706 05:32:30.182"/>
-</kw>
-<kw name="Fechar Browser" library="narayanaBrahmajyoti">
-<status status="NOT RUN" starttime="20220706 05:32:30.197" endtime="20220706 05:32:30.197"/>
-</kw>
-<status status="FAIL" starttime="20220706 05:32:29.768" endtime="20220706 05:32:30.201">No keyword with name 'Pesquisar por "Alceu Dispor" e selecionar a primeira opção da lista de resultados' found. Did you mean:
-    narayanaBrahmajyoti.Pesquisar Por "Vira Lata Caramelo" E Selecionar A Primeira Opção Da Lista De Resultados</status>
-</test>
-<status status="FAIL" starttime="20220706 05:31:29.747" endtime="20220706 05:32:30.218"/>
+<status status="FAIL" starttime="20220706 20:45:12.501" endtime="20220706 20:45:25.946"/>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="6" skip="0">All Tests</stat>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="4" fail="6" skip="0" id="s1" name="narayanaBrahmajyoti">narayanaBrahmajyoti</stat>
+<stat pass="1" fail="1" skip="0" id="s1" name="narayanaBrahmajyoti">narayanaBrahmajyoti</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220706 05:31:29.964" level="ERROR">Error in file 'C:\Users\Israel\Documents\Nara\CTD-mochila-do-viajante\testing_1\ProvaFinal\narayanaBrahmajyoti.resource' on line 33: Setting variable ' ${PESQ_ERARR}' failed: Invalid variable name ' ${PESQ_ERARR}'.</msg>
-<msg timestamp="20220706 05:31:29.965" level="ERROR">Error in file 'C:\Users\Israel\Documents\Nara\CTD-mochila-do-viajante\testing_1\ProvaFinal\narayanaBrahmajyoti.resource' on line 42: Setting variable ' ${TXT_MSG_ERARR}' failed: Invalid variable name ' ${TXT_MSG_ERARR}'.</msg>
-<msg timestamp="20220706 05:31:29.965" level="ERROR">Error in file 'C:\Users\Israel\Documents\Nara\CTD-mochila-do-viajante\testing_1\ProvaFinal\narayanaBrahmajyoti.resource' on line 55: Setting variable ' ${TXT_MSG_NEM_TE_VI}' failed: Invalid variable name ' ${TXT_MSG_NEM_TE_VI}'.</msg>
-<msg timestamp="20220706 05:31:29.966" level="ERROR">Error in file 'C:\Users\Israel\Documents\Nara\CTD-mochila-do-viajante\testing_1\ProvaFinal\narayanaBrahmajyoti.resource' on line 59: Setting variable ' ${PESQ_ALCEU_DISPOR}' failed: Invalid variable name ' ${PESQ_ALCEU_DISPOR}'.</msg>
-<msg timestamp="20220706 05:31:29.966" level="ERROR">Error in file 'C:\Users\Israel\Documents\Nara\CTD-mochila-do-viajante\testing_1\ProvaFinal\narayanaBrahmajyoti.resource' on line 68: Setting variable ' ${TXT_MSG_ALCEU_DISPOR}' failed: Invalid variable name ' ${TXT_MSG_ALCEU_DISPOR}'.</msg>
-<msg timestamp="20220706 05:31:49.695" level="WARN">Multiple tests with name 'Processo de compra de uma camiseta no site Chico Rei' executed in suite 'narayanaBrahmajyoti'.</msg>
-<msg timestamp="20220706 05:31:57.934" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: Browsing context has been discarded
-Stacktrace:
-WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
-NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.jsm:440:5
-assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.jsm:445:13
-assert.open@chrome://remote/content/shared/webdriver/Assert.jsm:153:4
-GeckoDriver.prototype.takeScreenshot@chrome://remote/content/marionette/driver.js:2233:10
-despatch@chrome://remote/content/marionette/server.js:306:40
-execute@chrome://remote/content/marionette/server.js:279:16
-onPacket/&lt;@chrome://remote/content/marionette/server.js:252:20
-onPacket@chrome://remote/content/marionette/server.js:253:9
-_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.js:500:20
-observe@resource://gre/modules/AsyncShutdown.jsm:575:16
-</msg>
-<msg timestamp="20220706 05:31:58.048" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: Browsing context has been discarded
-Stacktrace:
-WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
-NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.jsm:440:5
-assert.that/&lt;@chrome://remote/content/shared/webdriver/Assert.jsm:445:13
-assert.open@chrome://remote/content/shared/webdriver/Assert.jsm:153:4
-GeckoDriver.prototype.takeScreenshot@chrome://remote/content/marionette/driver.js:2233:10
-despatch@chrome://remote/content/marionette/server.js:306:40
-execute@chrome://remote/content/marionette/server.js:279:16
-onPacket/&lt;@chrome://remote/content/marionette/server.js:252:20
-onPacket@chrome://remote/content/marionette/server.js:253:9
-_onJSONObjectReady/&lt;@chrome://remote/content/marionette/transport.js:500:20
-observe@resource://gre/modules/AsyncShutdown.jsm:575:16
-</msg>
-<msg timestamp="20220706 05:32:08.450" level="WARN">Multiple tests with name 'Processo de compra de camiseta no site Chico Rei' executed in suite 'narayanaBrahmajyoti'.</msg>
-<msg timestamp="20220706 05:32:19.105" level="WARN">Multiple tests with name 'Processo de compra de camiseta no site Chico Rei' executed in suite 'narayanaBrahmajyoti'.</msg>
 </errors>
 </robot>

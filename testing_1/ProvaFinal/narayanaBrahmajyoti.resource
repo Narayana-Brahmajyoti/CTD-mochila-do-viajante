@@ -13,24 +13,24 @@ ${TAMANHO_CAMISA}               xpath=//div[3]/nav/div[2]
 ${BTN_COMPRAR}                  css=.btn-loading:nth-child(1) > span:nth-child(2)
 ${BTN_VER_SACOLA}               xpath=//div[4]/div/a/div
 ${VALIDAR_MENSAGEM}             css=#cart-loyalty > .mx-0
-${TXT_MSG_VIRA_LATA}            VOCÊ ESTÁ ACUMULANDO 1 PONTO NO CARTÃO FIDELIDADE!
+${TXT_MSG_VIRA_LATA}            VOCÊ ESTÁ ACUMULANDO 1 PONTOS NO CARTÃO FIDELIDADE!
 ${FECHAR_PEDIDO}                xpath=//div[@id='cart-finish']/button[2]
 
 # Variaveis segundo caso
-${PESQ_AMARELO_DESESPERO}       Amarelo é desespero          
-#${RES_PESQ_AMARELO_DESESPERO}   xpath=//span[contains(.,'De R$ 79,99 por R$ 69,99')]
-#${CONFIRMAR_VALOR_CAMISA}       xpath=//p[contains(.,'R$ 69,99')]
-#${VALOR_CAMISA}                 R$ 69,99 
-#${COR_CAMISA}                   css=.cr-option-squared:nth-child(2)
-#${TAMANHO_CAMISA}               xpath=//div[3]/nav/div[2]
-#${BTN_COMPRAR}                  css=.btn-loading:nth-child(1) > span:nth-child(2)
-#${BTN_VER_SACOLA}               xpath=//div[4]/div/a/div
-#${VALIDAR_MENSAGEM}             css=#cart-loyalty > .mx-0
-${TXT_MSG_AMARELO}              Adquira o Chico Rei Prime para desfrutar de frete grátis por 1 ano em todos os pedidos, sem valor mínimo.
-#${FECHAR_PEDIDO}                xpath=//div[@id='cart-finish']/button[2]
+# ${PESQ_AMARELO_DESESPERO}       Amarelo é desespero          
+# ${RES_PESQ_AMARELO_DESESPERO}   xpath=//span[contains(.,'De R$ 79,99 por R$ 69,99')]
+# ${CONFIRMAR_VALOR_CAMISA}       xpath=//p[contains(.,'R$ 69,99')]
+# ${VALOR_CAMISA}                 R$ 69,99 
+# ${COR_CAMISA}                   css=.cr-option-squared:nth-child(2)
+# ${TAMANHO_CAMISA}               xpath=//div[3]/nav/div[2]
+# ${BTN_COMPRAR}                  css=.btn-loading:nth-child(1) > span:nth-child(2)
+# ${BTN_VER_SACOLA}               xpath=//div[4]/div/a/div
+# ${VALIDAR_MENSAGEM}             css=#cart-loyalty > .mx-0
+# ${TXT_MSG_AMARELO}              Adquira o Chico Rei Prime para desfrutar de frete grátis por 1 ano em todos os pedidos, sem valor mínimo.
+# ${FECHAR_PEDIDO}                xpath=//div[@id='cart-finish']/button[2]
 
 # # Variaveis terceiro caso
- ${PESQ_ERARR}                   Erarr          
+#  ${PESQ_ERARR}                    Erarr          
 # ${RES_PESQ_ERARR}               xpath=//span[contains(.,'De R$ 79,99 por R$ 69,99')]
 # ${CONFIRMAR_VALOR_CAMISA}       xpath=//p[contains(.,'R$ 69,99')]
 # ${VALOR_CAMISA}                 R$ 69,99
@@ -39,11 +39,11 @@ ${TXT_MSG_AMARELO}              Adquira o Chico Rei Prime para desfrutar de fret
 # ${BTN_COMPRAR}                  css=.btn-loading:nth-child(1) > span:nth-child(2)
 # ${BTN_VER_SACOLA}               xpath=//div[4]/div/a/div
 # ${VALIDAR_MENSAGEM}             css=#cart-loyalty > .mx-0
- ${TXT_MSG_ERARR}                De segunda a sexta, das 8h às 20h.
+#  ${TXT_MSG_ERARR}                 De segunda a sexta, das 8h às 20h.
 # ${FECHAR_PEDIDO}                xpath=//div[@id='cart-finish']/button[2]
 
 # # Variaveis quarto caso
-# ${PESQ_Nem_Te_Vi}               Nem Te Vi 
+#  ${PESQ_Nem_Te_Vi}                Nem Te Vi 
 # ${RES_PESQ_Nem_Te_Vi}           xpath=//span[contains(.,'De R$ 79,99 por R$ 69,99')]
 # ${CONFIRMAR_VALOR_CAMISA}       xpath=//p[contains(.,'R$ 69,99')]
 # ${VALOR_CAMISA}                 R$ 69,99
@@ -52,12 +52,12 @@ ${TXT_MSG_AMARELO}              Adquira o Chico Rei Prime para desfrutar de fret
 # ${BTN_COMPRAR}                  css=.btn-loading:nth-child(1) > span:nth-child(2)
 # ${BTN_VER_SACOLA}               xpath=//div[4]/div/a/div
 # ${VALIDAR_MENSAGEM}             css=#cart-loyalty > .mx-0
- ${TXT_MSG_NEM_TE_VI}            Adquira o Chico Rei Prime para desfrutar de frete grátis por 1 ano em todos os pedidos, sem valor mínimo.
+#  ${TXT_MSG_NEM_TE_VI}             Adquira o Chico Rei Prime para desfrutar de frete grátis por 1 ano em todos os pedidos, sem valor mínimo.
 # ${FECHAR_PEDIDO}                xpath=//div[@id='cart-finish']/button[2]
 
 # # Variaveis quinto caso
- ${PESQ_ALCEU_DISPOR}            Alceu Dispor        
- #${RES_PESQ_ALCEU_DISPOR}        xpath=//span[contains(.,'De R$ 79,99 por R$ 69,99')]
+#  ${PESQ_ALCEU_DISPOR}             Alceu Dispor        
+# ${RES_PESQ_ALCEU_DISPOR}        xpath=//span[contains(.,'De R$ 79,99 por R$ 69,99')]
 # ${CONFIRMAR_VALOR_CAMISA}       xpath=//p[contains(.,'R$ 69,99')]
 # ${VALOR_CAMISA}                 R$ 69,99
 # ${COR_CAMISA}                   css=.cr-option-squared:nth-child(2)
@@ -65,7 +65,7 @@ ${TXT_MSG_AMARELO}              Adquira o Chico Rei Prime para desfrutar de fret
 # ${BTN_COMPRAR}                  css=.btn-loading:nth-child(1) > span:nth-child(2)
 # ${BTN_VER_SACOLA}               xpath=//div[4]/div/a/div
 # ${VALIDAR_MENSAGEM}             css=#cart-loyalty > .mx-0
- ${TXT_MSG_ALCEU_DISPOR}         Compre parcelado com cartão ou á vista com boleto ou depósito
+#  ${TXT_MSG_ALCEU_DISPOR}          Compre parcelado com cartão ou á vista com boleto ou depósito
 # ${FECHAR_PEDIDO}                xpath=//div[@id='cart-finish']/button[2]
 
 *** Keywords ***  
@@ -90,13 +90,13 @@ Clicar em "Ver sacola"
     Click Element           ${BTN_VER_SACOLA}
 Validar se a mensagem "VOCÊ ESTÁ ACUMULANDO 1 PONTO NO CARTÃO FIDELIDADE!" está sendo exibida
     Sleep                   ${SLEEP}
-    Element Should Contain  ${VALIDAR_MENSAGEM}     ${TXT_MSG}
+    Page Should Contain     ${TXT_MSG_VIRA_LATA}
 Clicar em "Fechar pedido"
     Click Element           ${FECHAR_PEDIDO}
     Sleep                   ${SLEEP}
-Fechar Browser
+Close Browser
 
-#Inicio segundo caso
+# Inicio segundo caso
 
 # Acessar o site Chico Rei
 #     Open Browser            ${SITE}     ${NAVEGADOR}
@@ -122,9 +122,9 @@ Fechar Browser
 # Clicar em "Fechar pedido"
 #     Click Element           ${FECHAR_PEDIDO}
 #     Sleep                   ${SLEEP}
-# Fechar Browser
+# Close Browser
      
-# #Inicio terceiro caso
+# Inicio terceiro caso
 # Acessar o site Chico Rei
 #     Open Browser            ${SITE}     ${NAVEGADOR}
 #     Maximize Browser Window  
@@ -152,7 +152,7 @@ Fechar Browser
 # Fechar Browser
 #     Close Browser
 
-# #Inicio quarto caso
+# Inicio quarto caso
 # Acessar o site Chico Rei
 #     Open Browser            ${SITE}     ${NAVEGADOR}
 #     Maximize Browser Window  
@@ -180,7 +180,7 @@ Fechar Browser
 # Fechar Browser
 #     Close Browser
 
-# #Inicio quinto caso
+# Inicio quinto caso
 # Acessar o site Chico Rei
 #     Open Browser            ${SITE}     ${NAVEGADOR}
 #     Maximize Browser Window  
