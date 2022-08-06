@@ -2,38 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5634f56f-4d7e-4ad1-a49f-c9d8ba6b4564" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Aula 4 - Chain of Responsibility pattern/Artigo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Aula 4 - Chain of Responsibility pattern/CheckQuality.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Aula 4 - Chain of Responsibility pattern/Gerenciador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Aula 4 - Chain of Responsibility pattern/Lote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Aula 4 - Chain of Responsibility pattern/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Aula 4 - Chain of Responsibility pattern/Peso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/.idea/Aula 2 - Template Method pattern.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/.idea/discord.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/TemplateIntegradorAluno.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/out/production/TemplateIntegrador/Afiliado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/out/production/TemplateIntegrador/Funcionario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/out/production/TemplateIntegrador/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/out/production/TemplateIntegrador/Vendedor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/out/production/TemplateIntegradorAluno/Afiliado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/out/production/TemplateIntegradorAluno/Estagiario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/out/production/TemplateIntegradorAluno/Funcionario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/out/production/TemplateIntegradorAluno/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/out/production/TemplateIntegradorAluno/MainTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/out/production/TemplateIntegradorAluno/Vendedor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/src/Afiliado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/src/Estagiario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/src/Funcionario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/src/MainTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/TemplateIntegradorAluno/src/Vendedor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/out/production/TemplateIntegradorAluno/Afiliado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/out/production/TemplateIntegradorAluno/Estagiario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/out/production/TemplateIntegradorAluno/Funcionario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/out/production/TemplateIntegradorAluno/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/out/production/TemplateIntegradorAluno/MainTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula 2 - Template Method pattern/NarayanaBrahmajyoti_templateMethodPattern/out/production/TemplateIntegradorAluno/Vendedor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProxyPattern/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProxyPattern/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProxyPattern/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProxyPattern/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProxyPattern/ProxyPattern.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProxyPattern/src/Download.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProxyPattern/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProxyPattern/src/ServicoDownload.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProxyPattern/src/Usuario.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Front_End_1/Aula 4  - Introdução à linguagem HTML/olamundo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Front_End_1/Aula 4  - Introdução à linguagem HTML/olamundo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Front_End_1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Front_End_1/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Front_End_2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Front_End_2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POO/Checkpoint/Checkpoint2/LojaBrinquedo/src/Boneca.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POO/Checkpoint/Checkpoint2/LojaBrinquedo/src/Boneca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POO/Checkpoint/Checkpoint2/LojaBrinquedo/src/Brinquedo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POO/Checkpoint/Checkpoint2/LojaBrinquedo/src/Brinquedo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POO/Checkpoint/Checkpoint2/LojaBrinquedo/src/Carrinho.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POO/Checkpoint/Checkpoint2/LojaBrinquedo/src/Carrinho.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POO/Checkpoint/Checkpoint2/LojaBrinquedo/src/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POO/Checkpoint/Checkpoint2/LojaBrinquedo/src/Estoque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POO/Checkpoint/Checkpoint2/LojaBrinquedo/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POO/Checkpoint/Checkpoint2/LojaBrinquedo/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POO/Checkpoint/Checkpoint2/LojaBrinquedo/src/Tabuleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../POO/Checkpoint/Checkpoint2/LojaBrinquedo/src/Tabuleiro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POO/Checkpoint/out/production/Checkpoint2/lojabrinquedo/Boneca.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../POO/Checkpoint/out/production/Checkpoint2/lojabrinquedo/Boneca.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POO/Checkpoint/out/production/Checkpoint2/lojabrinquedo/Brinquedo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../POO/Checkpoint/out/production/Checkpoint2/lojabrinquedo/Brinquedo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POO/Checkpoint/out/production/Checkpoint2/lojabrinquedo/Carrinho.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../POO/Checkpoint/out/production/Checkpoint2/lojabrinquedo/Carrinho.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POO/Checkpoint/out/production/Checkpoint2/lojabrinquedo/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../POO/Checkpoint/out/production/Checkpoint2/lojabrinquedo/Tabuleiro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../POO/Checkpoint/out/production/Checkpoint2/lojabrinquedo/Tabuleiro.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Prog_Imperativa/Aula 16 - MesaDeTrabalho-Funções Avançadas/fizzBuzz.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Prog_Imperativa/Aula 16 - MesaDeTrabalho-Funções Avançadas/fizzBuzz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../testing_1/Aula 20 - Testes automatizados Seleniun/aula20-TesteSelenium/target/classes/driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../testing_1/Aula 20 - Testes automatizados Seleniun/aula20-TesteSelenium/target/classes/driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../testing_1/Aula 20 - Testes automatizados Seleniun/aula20-TesteSelenium/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../testing_1/Aula 20 - Testes automatizados Seleniun/aula20-TesteSelenium/target/classes/org/example/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../testing_1/ProvaFinal/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../testing_1/ProvaFinal/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../testing_1/ProvaFinal/narayanaBrahmajyoti.resource" beforeDir="false" afterPath="$PROJECT_DIR$/../../testing_1/ProvaFinal/narayanaBrahmajyoti.resource" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../testing_1/ProvaFinal/narayanaBrahmajyoti.robot" beforeDir="false" afterPath="$PROJECT_DIR$/../../testing_1/ProvaFinal/narayanaBrahmajyoti.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../testing_1/ProvaFinal/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../testing_1/ProvaFinal/output.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../testing_1/ProvaFinal/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../testing_1/ProvaFinal/report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,19 +64,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2CruKGiz3g8Pkuh31S3s8XzFpON" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Israel/Documents/Nara/CTD-mochila-do-viajante/Back_End_1/Aula 5 - Proxy Pattern&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Israel/Documents/Nara/CTD-mochila-do-viajante/Back_End_1/Aula 5 - Proxy Pattern/Exercicio guiado - Proxy_pattern",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -77,5 +104,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Exercicio guiado - Proxy_pattern/src/Main.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
