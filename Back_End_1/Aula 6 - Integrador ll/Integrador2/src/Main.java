@@ -1,4 +1,6 @@
+import org.apache.log4j.Logger;
 public class Main {
+    private static final Logger logger = Logger.getLogger(Main.class);
     public static void main(String[] args) {
         GradeDeFilmesProxy proxy = new GradeDeFilmesProxy(new GradeDeFilmes());
         proxy.setIp(new Ip(100, 23, 23, 25));
@@ -11,17 +13,8 @@ public class Main {
         }
 
 
-        SerieProxy s = new SerieProxy(new SerieGrade());
+        SerieProxy s = new SerieProxy();
 
-        try {
-            s.getSerie("Game Of Thrones");
-            s.getSerie("Friends");
-            s.getSerie("How i meet your Mother");
-            s.getSerie("The Boys");
-            s.getSerie("Grey´s Anatomy");
-            s.getSerie("The Office");
-        } catch (SerieNaoHabilitadaException myException) {
-            System.out.println(myException.getMessage());
-        }
+
     }
 }
