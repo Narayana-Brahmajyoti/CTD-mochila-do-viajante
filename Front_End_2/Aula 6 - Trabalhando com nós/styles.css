@@ -130,6 +130,12 @@ você terá que modificar os seletores a fim de poder resolver o exercício. */
   color: rgb(230, 230, 230);
 }
 
+.btn-criarCard{
+  padding: 10px;
+  border-radius: 0.5rem ;
+  border:#F2E9E4 solid 1px
+}
+
 
 
 

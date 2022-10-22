@@ -16,9 +16,9 @@
 //Removendo os cards de cada felino
 let felinos = document.querySelectorAll('.item');
 
-felinos.forEach(felino => {
-    felino.style.display = "none";
-});
+function apagarCard(){
+    felinos.remove();
+}
 
 //Criando a função que passa os dados de cada card para o código HTML
 function criarCard(url, titulo, des) {
@@ -43,7 +43,7 @@ function criarCard(url, titulo, des) {
 }
 
 // Criando varios cards
-
+function ativarCards(){
 criarCard('./imagens/chita.jpg', 'Chita', 'O guepardo, ou chita (Acinonyx jubatus) é um membro atípico da família felina. É o único representante vivo do gênero Acinonyx. Ele caça graças à sua visão e grande velocidade. É o animal terrestre mais rápido do mundo, atingindo uma velocidade máxima de 115 km/h em corridas de até quinhentos metros.');
 criarCard('./imagens/jaguar.jpg', 'Jaguar', 'Descrição do Felino 2');
 criarCard('./imagens/leon.jpg', 'Leão', 'Descrição do Felino 3');
@@ -51,3 +51,4 @@ criarCard('./imagens/leopardo.jpg', 'Leopardo', 'Descrição do Felino 4');
 criarCard('./imagens/pantera-negra.jpg', 'Pantera-Negra', 'O jaguar, ou jaguarete (Panthera onca) é um carnívoro felídeo da sub-família Panthera e do gênero Panthera. É a única das cinco espécies existentes deste gênero encontradas nas Américas. Também é o maior felino das Américas e o terceiro maior do mundo, depois do tigre (Panthera tigris) e do leão (Panthera leo).');
 criarCard('./imagens/tiger.jpg', 'Tigre', 'Descrição do Felino 6');
 criarCard('https://picsum.photos/200/300', 'Lorem Picsum', 'Imagem aleatória');
+}
