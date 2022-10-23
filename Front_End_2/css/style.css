@@ -27,6 +27,7 @@
 }
 
 .card{
+
     background: linear-gradient(45deg, var(--primary), var(--secondary), var(--dark));
     color: var(--neutral);
     padding: 1rem;
@@ -35,7 +36,7 @@
     margin: 0.8rem 0;
 }
 
-#card-img{
-    /* width: 98%;
-    margin-top: 3.5px; */
+#btn{
+    background: linear-gradient(45deg, var(--primary), var(--secondary), var(--dark));
+    color: var(--neutral);
 }
