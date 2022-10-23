@@ -1,0 +1,41 @@
+/* @import url('/css/style.css'); */
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+
+:root {
+    --primary: #4DE4CF;
+    --secondary: #8A6DF1;
+    --dark: #0B1E23;
+    --neutral: #F2F2F2;
+}
+
+.navbar {
+    background: linear-gradient(45deg, var(--primary), var(--secondary), var(--dark));
+    color: var(--neutral);    
+} 
+
+.dropdown-menu {
+    background: linear-gradient(45deg, var(--primary), var(--secondary), var(--dark));
+}
+
+#text1 {
+    font: 400 2rem/1.5 'Aclonica', sans-serif;
+    margin: 0 auto;
+    align-items: center;
+    padding: 3%;
+
+}
+
+.card{
+    background: linear-gradient(45deg, var(--primary), var(--secondary), var(--dark));
+    color: var(--neutral);
+    padding: 1rem;
+    border:#F2E9E4 solid 1px ;
+    border-radius: 0.8rem;
+    margin: 0.8rem 0;
+}
+
+#card-img{
+    /* width: 98%;
+    margin-top: 3.5px; */
+}
