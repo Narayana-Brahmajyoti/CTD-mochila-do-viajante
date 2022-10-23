@@ -1,27 +1,21 @@
 function tarefaPendente(tarefa) {
 
-    let dataConvertida = dayjs(tarefa.createdAt).format('DD/MM/YYYY')
+    let dataConvertida = dayjs(tarefa.createdAt).format('DD/MM/YYYY HH:mm')
     let ul = document.querySelector('.tarefas-pendentes')
     let li = document.createElement('li')
+    let tarefaAlterada = `'${tarefa.description}'`
+
     li.classList.add('tarefa')
     li.innerHTML = `
-    <div class="not-done" id="${tarefa.id}" onclick="finalizarTarefa(${tarefa.id}, token)" ></div>
-    <div class="descricao">
+    <div class="not-done check${tarefa.id}" id="${tarefa.id}" onclick="finalizarTarefa(${tarefa.id}, token)"><img hidden src="../../assets/icons8-selecionado.gif" class="v-check ${tarefa.id}" allowFullScreen></img></div>
+    <div class="descricao descricao${tarefa.id}">
         <p class="nome">${tarefa.description}</p>
-        <div class="editar" >
-            <form >
-                <input id="editar" type="text" placeholder="Digite aqui sua tarefa" hidden>
-                    <button class="btn-send" onclick="editarTarefa(${tarefa.id}, token)" >
-                        <img src="./assets/send.png" alt="enviar"> 
-                    </button>
-            </form>        
-            <button class="btn-editar" onclick="aparecerCampo()" >
-                <img src="./assets/Pngtree-pencil icon_5.png" alt="editar tarefa" id="editar">
-            </button>
+        <div class='botoes' >
+            <button  onclick="editarTarefa(${tarefa.id}, ${tarefaAlterada})"><i class="fas fa-marker"></i></button>
             <p class="timestamp"><i class="far fa-calendar-alt"></i> ${dataConvertida}</p>
         </div>
     </div>
-    `
+`
     ul.appendChild(li)
 
 }

@@ -9,15 +9,12 @@ const criarNovaTarefa = (entradaTarefa) => {
     const testeRegexVazio = padraoVazio.test(tarefa.description);   // retorna true se o nome da tarefa entrar na regra do Regexp
 
     if (testeRegexVazio === true) {
-        console.log('A Tarefa não pode ser nome vazio.');
+        return Swal.fire("Campo nova tarefa é obrigatório!", "Não é possível criar uma tarefa sem descrição.", 'info')
 
-        return alert(`A Tarefa não pode ser nome vazio.`)
     } else {
 
         let urlCriarTarefa = "https://ctd-todo-api.herokuapp.com/v1/tasks";
         let novaTarefaJSON = JSON.stringify(tarefa);
-
-        console.log(novaTarefaJSON);
 
         let endPoint = {
             method: 'POST',
@@ -28,33 +25,29 @@ const criarNovaTarefa = (entradaTarefa) => {
             body: novaTarefaJSON
         }
 
-        fetch(urlCriarTarefa, endPoint)
-        .then(response => {
+        fetch(urlCriarTarefa, endPoint).then(response => {
             if (response.status == 201) {
-                console.log(response)
                 return response.json()
 
             } else {
-                console.log(response)
                 throw response.status
             }
 
         }).then(data => {
-            window.location = 'tarefas.html'
+            tarefaPendente(data)
             return data.jwt
 
         }).catch(error => {
             if (error == 400) {
-                console.log('Erro 400');
-                alert('Erro 400')
+                Swal.fire("Erro 400", "", 'error')
+
             } else {
-                console.log('Tentar novamente mais tarde');
-                alert('Tentar novamente mais tarde')
+                Swal.fire("Ocorreu um erro inesperado.", "Por favor, tente novamente mais tarde!", 'warning')
+
             }
         })
     }
 }
-
 
 
 

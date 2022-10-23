@@ -1,15 +1,21 @@
 // variaveis
 let nomeUsuario = document.querySelector('.user-info p');
 let token = sessionStorage.getItem('jwt');
-let novaTarefa = pegarElementoID('novaTarefa');
-let btnTarefa = document.querySelector('.nova-tarefa button');
+let novaTarefa = document.querySelector('.novaTarefa');
+let btnTarefa = pegarElementoID('criarTarefa');
+let btnSessao = pegarElementoID('closeApp');
 
+// evento que executa uma função quando a página carregar
 onload = function () {
+
+
     if (!token) {
         location.href = 'index.html'
     } else {
+        limparInput()
         pegarUsuario(token)
         listarTarefas(token)
+        
     }
 }
 
@@ -18,8 +24,16 @@ onload = function () {
 
 btnTarefa.addEventListener('click', event => {
     event.preventDefault()
-    let textoNovaTarefa = novaTarefa.value; // CORRIGIR A CAPTURA DO TEXTO DA TAREFA
+    let textoNovaTarefa = novaTarefa.value;     // Captura o nome da tarefa digitada no input (captura dinâmica)
     criarNovaTarefa(textoNovaTarefa)
+    limparInput()
+})
+
+//evento para finalizar sessão
+
+btnSessao.addEventListener('click', e => {
+    e.preventDefault()
+    finalizarSessao()
 })
 
 

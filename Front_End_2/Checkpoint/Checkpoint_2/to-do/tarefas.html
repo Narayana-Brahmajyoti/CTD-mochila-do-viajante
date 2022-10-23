@@ -14,6 +14,10 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="./styles/tarefas.css">
+  <link rel="stylesheet" href="./styles/spinner.css">
+  <link rel="shortcut icon" href="assets/favicon(1).ico">
+  <link rel="shortcut icon" href="assets/favicon.png">
+
   <!-- ----------------------------- sweet alert ----------------------------- -->
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- CDN example (unpkg) -->
@@ -23,16 +27,19 @@
 
   <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
 
-
+  
+  <script defer src="scripts/animacoes/loaders.js"></script>
+  <script defer src="scripts/tarefas/animacao.js"></script>
   <script defer src="scripts/validacoes/utils.js"></script>
   <script defer src="scripts/tarefas/deletarTarefa.js"></script>
   <script defer src="scripts/tarefas/getUsuario.js"></script>
   <script defer src="scripts/tarefas/renderiza/tarefaFinalizada.js"></script>
+  <script defer src="scripts/tarefas/editarTarefa.js"></script>
   <script defer src="scripts/tarefas/renderiza/tarefaPendente.js"></script>
   <script defer src="scripts/tarefas/criarTarefa.js"></script>
   <script defer src="scripts/tarefas/listarTarefas.js"></script>
   <script defer src="scripts/tarefas/statusTarefa.js"></script>
-  <script defer src="scripts/tarefas/editarTarefa.js"></script>
+  <script defer src="scripts/tarefas/finalizarSessao.js"></script>
   <script defer src="scripts/tarefas/tasks.js"></script>
 
 
@@ -47,7 +54,7 @@
 
     <div class="user-info">
       <p>Nome usuário</p>
-      <div class="user-image"></div>
+      <img class="user-image" src="assets/user-unisex-512.webp" alt="">
       <p id="closeApp">Finalizar sessão</i>
       </p>
     </div>
@@ -56,8 +63,9 @@
 
   <form class="nova-tarefa">
     <div class="not-done "></div>
-    <input id="novaTarefa" type="text" placeholder="Nova tarefa">
-    <button type="submit">
+    <input id="novaTarefa" class= "novaTarefa" type="text" placeholder="Nova tarefa">
+    <button title="enviarTarefa" id="alterar" type="submit"  ><i class="fas fa-paper-plane"></i></button>
+    <button id="criarTarefa" type="submit">
       <img src="./assets/plus.png" alt="Adicionar uma nova tarefa">
     </button>
   </form>
@@ -86,8 +94,7 @@
           <button><i class="far fa-trash-alt"></i></button>
         </div>
       </div>
-    </li> 
-  -->
+    </li> -->
 
 
   </ul>
